@@ -1,0 +1,2068 @@
+{
+  "by_root_type": {
+    "goal_entry_pending_exit": {
+      "harms": 0,
+      "interventions": 0,
+      "roots": 16,
+      "strong_gains": 0
+    },
+    "stable_hold": {
+      "harms": 0,
+      "interventions": 0,
+      "roots": 11,
+      "strong_gains": 0
+    }
+  },
+  "coverage": 0.0,
+  "harm_rate": 0.0,
+  "oracle_positive_roots": 4,
+  "passes_constraints": false,
+  "precision": 0.0,
+  "roots": 52,
+  "selected_benchmark_rate": 0.7692307692307693,
+  "selected_goal_exit_rate": 0.38461538461538464,
+  "selected_harms": 0,
+  "selected_net_strong_gain": 0,
+  "selected_roots": 0,
+  "selected_strict_rate": 0.36538461538461536,
+  "selected_strong_gains": 0,
+  "selections": [
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.9608158120059,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 176,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.240411639213562,
+        0.09615421295166016,
+        0.05128491669893265
+      ],
+      "prob_gain": 0.45221489667892456,
+      "prob_harm": 0.39995110034942627,
+      "root_id": "root_0018_stable_hold",
+      "root_index": 18,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.9608158120059,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 176,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 4897.988215848297,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 176,
+        "max_goal_streak": 176,
+        "steps": 180,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.20375694334506989,
+        0.05597837269306183,
+        0.12441914528608322
+      ],
+      "prob_gain": 0.5473442077636719,
+      "prob_harm": 0.4447828531265259,
+      "root_id": "root_0019_near_goal",
+      "root_index": 19,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 4897.988215848297,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 176,
+        "max_goal_streak": 176,
+        "steps": 180,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 4715.031154968058,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 169,
+        "max_goal_streak": 164,
+        "steps": 175,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.24582898616790771,
+        0.06479724496603012,
+        -0.0074357762932777405
+      ],
+      "prob_gain": 0.48249301314353943,
+      "prob_harm": 0.43095093965530396,
+      "root_id": "root_0034_goal_entry_pending_exit",
+      "root_index": 34,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 4715.031154968058,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 169,
+        "max_goal_streak": 164,
+        "steps": 175,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.3002038262448,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 164,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.19664323329925537,
+        0.07874886691570282,
+        -0.0058884695172309875
+      ],
+      "prob_gain": 0.4317973256111145,
+      "prob_harm": 0.43109390139579773,
+      "root_id": "root_0035_stable_hold",
+      "root_index": 35,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.3002038262448,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 164,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.0297024431889,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 158,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.197404146194458,
+        0.0948764756321907,
+        -0.005819328129291534
+      ],
+      "prob_gain": 0.42158135771751404,
+      "prob_harm": 0.4640620946884155,
+      "root_id": "root_0048_stable_hold",
+      "root_index": 48,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.0297024431889,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 158,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 4847.907872034629,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 158,
+        "max_goal_streak": 158,
+        "steps": 158,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.24010981619358063,
+        0.10756617784500122,
+        0.02469053864479065
+      ],
+      "prob_gain": 0.4803139865398407,
+      "prob_harm": 0.4398680329322815,
+      "root_id": "root_0049_near_goal",
+      "root_index": 49,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 4847.907872034629,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 158,
+        "max_goal_streak": 158,
+        "steps": 158,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.3783295366675,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 180,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.21641124784946442,
+        0.11777883768081665,
+        0.006914392113685608
+      ],
+      "prob_gain": 0.42503300309181213,
+      "prob_harm": 0.4300784468650818,
+      "root_id": "root_0056_stable_hold",
+      "root_index": 56,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.3783295366675,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 180,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 5093.920379182754,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 180,
+        "max_goal_streak": 180,
+        "steps": 180,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.22397850453853607,
+        0.06211426854133606,
+        0.014471091330051422
+      ],
+      "prob_gain": 0.5042924284934998,
+      "prob_harm": 0.4157852232456207,
+      "root_id": "root_0057_near_goal",
+      "root_index": 57,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 5093.920379182754,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 180,
+        "max_goal_streak": 180,
+        "steps": 180,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 852.1818579095323,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 11,
+        "steps": 156,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.237809419631958,
+        0.1122371181845665,
+        0.06416285783052444
+      ],
+      "prob_gain": 0.4823295474052429,
+      "prob_harm": 0.44396451115608215,
+      "root_id": "root_0058_goal_entry_pending_exit",
+      "root_index": 58,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 852.1818579095323,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 11,
+        "steps": 156,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1063.5675450604333,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": true,
+        "goal_steps": 11,
+        "max_goal_streak": 11,
+        "steps": 190,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.3331735134124756,
+        0.019111916422843933,
+        0.0870446190237999
+      ],
+      "prob_gain": 0.537528932094574,
+      "prob_harm": 0.46318545937538147,
+      "root_id": "root_0059_far_pre_goal_failure",
+      "root_index": 59,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1063.5675450604333,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": true,
+        "goal_steps": 11,
+        "max_goal_streak": 11,
+        "steps": 190,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.8734869476975,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 177,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2031175047159195,
+        0.15154248476028442,
+        -0.021058324724435806
+      ],
+      "prob_gain": 0.4198586046695709,
+      "prob_harm": 0.42227858304977417,
+      "root_id": "root_0060_stable_hold",
+      "root_index": 60,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.8734869476975,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 177,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 4974.737291801869,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 177,
+        "max_goal_streak": 177,
+        "steps": 179,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2319200187921524,
+        0.07702973484992981,
+        0.029770448803901672
+      ],
+      "prob_gain": 0.48058658838272095,
+      "prob_harm": 0.4156019985675812,
+      "root_id": "root_0061_near_goal",
+      "root_index": 61,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 4974.737291801869,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 177,
+        "max_goal_streak": 177,
+        "steps": 179,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": -47.00665458248396,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 65,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.20202940702438354,
+        0.12831154465675354,
+        -0.0028190240263938904
+      ],
+      "prob_gain": 0.4349045753479004,
+      "prob_harm": 0.4286970794200897,
+      "root_id": "root_0079_far_pre_goal_failure",
+      "root_index": 79,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": -47.00665458248396,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 65,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 349.8980253746499,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 10,
+        "steps": 117,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.13971415162086487,
+        0.09634189307689667,
+        -0.06924127042293549
+      ],
+      "prob_gain": 0.4758191704750061,
+      "prob_harm": 0.4398445188999176,
+      "root_id": "root_0098_goal_entry_pending_exit",
+      "root_index": 98,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 349.8980253746499,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 10,
+        "steps": 117,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 689.9753955740107,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": true,
+        "goal_steps": 10,
+        "max_goal_streak": 10,
+        "steps": 124,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.13206025958061218,
+        0.13964784145355225,
+        0.042696513235569
+      ],
+      "prob_gain": 0.4682086706161499,
+      "prob_harm": 0.46634411811828613,
+      "root_id": "root_0099_near_goal",
+      "root_index": 99,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 689.9753955740107,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": true,
+        "goal_steps": 10,
+        "max_goal_streak": 10,
+        "steps": 124,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.2429359475707,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 183,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.23551584780216217,
+        0.09295010566711426,
+        0.008097939193248749
+      ],
+      "prob_gain": 0.453697144985199,
+      "prob_harm": 0.41110920906066895,
+      "root_id": "root_0100_stable_hold",
+      "root_index": 100,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.2429359475707,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 183,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 5034.276967575575,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 183,
+        "max_goal_streak": 183,
+        "steps": 185,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.1801801323890686,
+        0.031094402074813843,
+        0.08393839746713638
+      ],
+      "prob_gain": 0.5121667385101318,
+      "prob_harm": 0.43957388401031494,
+      "root_id": "root_0101_near_goal",
+      "root_index": 101,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 5034.276967575575,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 183,
+        "max_goal_streak": 183,
+        "steps": 185,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 334.6899771783699,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 6,
+        "steps": 176,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2279040664434433,
+        0.08019479364156723,
+        0.010972999036312103
+      ],
+      "prob_gain": 0.48362550139427185,
+      "prob_harm": 0.4456416964530945,
+      "root_id": "root_0103_goal_entry_pending_exit",
+      "root_index": 103,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 334.6899771783699,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 6,
+        "steps": 176,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 67.97421613645277,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 168,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.26088353991508484,
+        0.12642785906791687,
+        -0.01843796670436859
+      ],
+      "prob_gain": 0.46945884823799133,
+      "prob_harm": 0.4290650486946106,
+      "root_id": "root_0104_near_goal",
+      "root_index": 104,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 67.97421613645277,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 168,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 29.757368593859056,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 45,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.17284099757671356,
+        0.09009480476379395,
+        0.13019675016403198
+      ],
+      "prob_gain": 0.5215473175048828,
+      "prob_harm": 0.4884299039840698,
+      "root_id": "root_0107_near_goal",
+      "root_index": 107,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 29.757368593859056,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 45,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 48.55136742595171,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 98,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.30696871876716614,
+        0.06177971512079239,
+        0.025752417743206024
+      ],
+      "prob_gain": 0.4893888235092163,
+      "prob_harm": 0.4743637144565582,
+      "root_id": "root_0108_far_pre_goal_failure",
+      "root_index": 108,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 48.55136742595171,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 98,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 368.9728889484757,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 7,
+        "steps": 160,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2175460308790207,
+        0.08855821937322617,
+        0.02002502977848053
+      ],
+      "prob_gain": 0.5668715834617615,
+      "prob_harm": 0.4893873333930969,
+      "root_id": "root_0112_goal_entry_pending_exit",
+      "root_index": 112,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 368.9728889484757,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 7,
+        "steps": 160,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 538.8934331616372,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": true,
+        "goal_steps": 7,
+        "max_goal_streak": 7,
+        "steps": 163,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.19189202785491943,
+        0.06062837690114975,
+        0.05879782885313034
+      ],
+      "prob_gain": 0.565631091594696,
+      "prob_harm": 0.48406195640563965,
+      "root_id": "root_0113_near_goal",
+      "root_index": 113,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 538.8934331616372,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": true,
+        "goal_steps": 7,
+        "max_goal_streak": 7,
+        "steps": 163,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 1.0863410575432075,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 122,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.22033236920833588,
+        0.19007141888141632,
+        0.0032140016555786133
+      ],
+      "prob_gain": 0.4193613827228546,
+      "prob_harm": 0.4143424332141876,
+      "root_id": "root_0116_far_pre_goal_failure",
+      "root_index": 116,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 1.0863410575432075,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 122,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 4336.536042680955,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 163,
+        "max_goal_streak": 158,
+        "steps": 175,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.27333900332450867,
+        0.10325324535369873,
+        0.11885084956884384
+      ],
+      "prob_gain": 0.5204137563705444,
+      "prob_harm": 0.4554280638694763,
+      "root_id": "root_0121_goal_entry_pending_exit",
+      "root_index": 121,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 4336.536042680955,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 163,
+        "max_goal_streak": 158,
+        "steps": 175,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.7193218032369,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 158,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.26126158237457275,
+        0.11270137131214142,
+        0.07377605885267258
+      ],
+      "prob_gain": 0.48295828700065613,
+      "prob_harm": 0.4657028317451477,
+      "root_id": "root_0122_stable_hold",
+      "root_index": 122,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.7193218032369,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 158,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 12.627738580441662,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 145,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.14403238892555237,
+        0.15471279621124268,
+        -0.03457288816571236
+      ],
+      "prob_gain": 0.4223620295524597,
+      "prob_harm": 0.4554775655269623,
+      "root_id": "root_0125_far_pre_goal_failure",
+      "root_index": 125,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 12.627738580441662,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 145,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 21.853601088462575,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 79,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.19064073264598846,
+        0.11717056483030319,
+        -0.033509671688079834
+      ],
+      "prob_gain": 0.4243273138999939,
+      "prob_harm": 0.4410117566585541,
+      "root_id": "root_0126_far_pre_goal_failure",
+      "root_index": 126,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 21.853601088462575,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 79,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 640.687110651735,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 66,
+        "steps": 126,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.27265989780426025,
+        0.08385304361581802,
+        0.02193264663219452
+      ],
+      "prob_gain": 0.4978777766227722,
+      "prob_harm": 0.4799417555332184,
+      "root_id": "root_0127_goal_entry_pending_exit",
+      "root_index": 127,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 640.687110651735,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 66,
+        "steps": 126,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1403.5109667328163,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 20,
+        "max_goal_streak": 66,
+        "steps": 141,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.238421231508255,
+        0.1723562330007553,
+        0.05078615993261337
+      ],
+      "prob_gain": 0.47760704159736633,
+      "prob_harm": 0.4574245512485504,
+      "root_id": "root_0128_stable_hold",
+      "root_index": 128,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1403.5109667328163,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 20,
+        "max_goal_streak": 66,
+        "steps": 141,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 349.8687555467723,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 20,
+        "steps": 173,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2734391391277313,
+        0.129815012216568,
+        0.011676616966724396
+      ],
+      "prob_gain": 0.4994671642780304,
+      "prob_harm": 0.4608243703842163,
+      "root_id": "root_0140_goal_entry_pending_exit",
+      "root_index": 140,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 349.8687555467723,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 20,
+        "steps": 173,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 84.53309760562132,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 166,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.21725915372371674,
+        0.16597282886505127,
+        0.06014949828386307
+      ],
+      "prob_gain": 0.47112712264060974,
+      "prob_harm": 0.45919713377952576,
+      "root_id": "root_0141_near_goal",
+      "root_index": 141,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 84.53309760562132,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 166,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 863.8964633959537,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 158,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.20822732150554657,
+        0.21433614194393158,
+        0.0755423828959465
+      ],
+      "prob_gain": 0.47586581110954285,
+      "prob_harm": 0.48179689049720764,
+      "root_id": "root_0142_near_goal",
+      "root_index": 142,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 863.8964633959537,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 158,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 734.0079952583131,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 190,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.3454359769821167,
+        -0.018543802201747894,
+        0.0883503332734108
+      ],
+      "prob_gain": 0.5278037786483765,
+      "prob_harm": 0.45631030201911926,
+      "root_id": "root_0143_far_pre_goal_failure",
+      "root_index": 143,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 734.0079952583131,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 190,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 62.67597166415661,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 161,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.14808085560798645,
+        0.09004148840904236,
+        0.0649590715765953
+      ],
+      "prob_gain": 0.4788844883441925,
+      "prob_harm": 0.44262492656707764,
+      "root_id": "root_0144_near_goal",
+      "root_index": 144,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 62.67597166415661,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 161,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 65.03053380323469,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 179,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.21552889049053192,
+        0.0848855972290039,
+        0.0677214190363884
+      ],
+      "prob_gain": 0.5367820858955383,
+      "prob_harm": 0.4461566209793091,
+      "root_id": "root_0145_far_pre_goal_failure",
+      "root_index": 145,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 65.03053380323469,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 179,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 246.68809299335277,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 51,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.29468613862991333,
+        0.12245640158653259,
+        0.04515368491411209
+      ],
+      "prob_gain": 0.5200657248497009,
+      "prob_harm": 0.4580056369304657,
+      "root_id": "root_0146_near_goal",
+      "root_index": 146,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 246.68809299335277,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 51,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": false,
+        "discounted_return": 153.2711160723529,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 176,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.26590126752853394,
+        0.09190091490745544,
+        0.12875819206237793
+      ],
+      "prob_gain": 0.5243521928787231,
+      "prob_harm": 0.45604437589645386,
+      "root_id": "root_0147_far_pre_goal_failure",
+      "root_index": 147,
+      "root_type": "far_pre_goal_failure",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": false,
+        "discounted_return": 153.2711160723529,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 176,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 888.5060193362376,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 35,
+        "steps": 135,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.08644925802946091,
+        0.13206660747528076,
+        0.08279048651456833
+      ],
+      "prob_gain": 0.49689799547195435,
+      "prob_harm": 0.4764695167541504,
+      "root_id": "root_0148_goal_entry_pending_exit",
+      "root_index": 148,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 888.5060193362376,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 35,
+        "steps": 135,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 405.7803131348374,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 67,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2125803828239441,
+        0.10234291106462479,
+        0.09661354869604111
+      ],
+      "prob_gain": 0.4990597665309906,
+      "prob_harm": 0.47854146361351013,
+      "root_id": "root_0149_near_goal",
+      "root_index": 149,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 405.7803131348374,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 67,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.0044867473894,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 145,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2208784520626068,
+        0.17231601476669312,
+        0.0013383328914642334
+      ],
+      "prob_gain": 0.4956071972846985,
+      "prob_harm": 0.4781520664691925,
+      "root_id": "root_0168_stable_hold",
+      "root_index": 168,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.0044867473894,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 145,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 4675.285613604643,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 145,
+        "max_goal_streak": 145,
+        "steps": 145,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.11609798669815063,
+        0.22364816069602966,
+        0.040993832051754
+      ],
+      "prob_gain": 0.5461097359657288,
+      "prob_harm": 0.521851658821106,
+      "root_id": "root_0169_near_goal",
+      "root_index": 169,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 4675.285613604643,
+        "drop": false,
+        "entry_after_root": true,
+        "goal_exit_after_root": false,
+        "goal_steps": 145,
+        "max_goal_streak": 145,
+        "steps": 145,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 336.4053247823672,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 29,
+        "steps": 125,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2759033143520355,
+        0.06948131322860718,
+        0.10806440562009811
+      ],
+      "prob_gain": 0.4918489158153534,
+      "prob_harm": 0.4634825587272644,
+      "root_id": "root_0171_goal_entry_pending_exit",
+      "root_index": 171,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 336.4053247823672,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 29,
+        "steps": 125,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 80.11130066559083,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 119,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.19638440012931824,
+        0.13565340638160706,
+        0.033081457018852234
+      ],
+      "prob_gain": 0.4828338325023651,
+      "prob_harm": 0.4700932800769806,
+      "root_id": "root_0172_near_goal",
+      "root_index": 172,
+      "root_type": "near_goal",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 80.11130066559083,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 0,
+        "max_goal_streak": 0,
+        "steps": 119,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 557.70723092737,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 10,
+        "max_goal_streak": 9,
+        "steps": 182,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.22574380040168762,
+        0.09057903289794922,
+        0.097635917365551
+      ],
+      "prob_gain": 0.519782543182373,
+      "prob_harm": 0.46665698289871216,
+      "root_id": "root_0186_goal_entry_pending_exit",
+      "root_index": 186,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 557.70723092737,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 10,
+        "max_goal_streak": 9,
+        "steps": 182,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.023920919758,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 180,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.19644610583782196,
+        0.08587802946567535,
+        -0.014722611755132675
+      ],
+      "prob_gain": 0.42541199922561646,
+      "prob_harm": 0.43744537234306335,
+      "root_id": "root_0191_stable_hold",
+      "root_index": 191,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1586.023920919758,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 180,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 4843.390239170483,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 171,
+        "max_goal_streak": 166,
+        "steps": 174,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.25742220878601074,
+        0.14460037648677826,
+        0.02195630967617035
+      ],
+      "prob_gain": 0.48318418860435486,
+      "prob_harm": 0.42989811301231384,
+      "root_id": "root_0196_goal_entry_pending_exit",
+      "root_index": 196,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 4843.390239170483,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 171,
+        "max_goal_streak": 166,
+        "steps": 174,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.4985537113066,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 166,
+        "steps": 30,
+        "strict": true
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.17603464424610138,
+        0.0920705646276474,
+        -0.05813877284526825
+      ],
+      "prob_gain": 0.41583847999572754,
+      "prob_harm": 0.4549960792064667,
+      "root_id": "root_0197_stable_hold",
+      "root_index": 197,
+      "root_type": "stable_hold",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 1585.4985537113066,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": false,
+        "goal_steps": 31,
+        "max_goal_streak": 166,
+        "steps": 30,
+        "strict": true
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 714.5522093947045,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 34,
+        "steps": 115,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.1211504265666008,
+        0.16223610937595367,
+        0.049938641488552094
+      ],
+      "prob_gain": 0.49219462275505066,
+      "prob_harm": 0.4855911135673523,
+      "root_id": "root_0222_goal_entry_pending_exit",
+      "root_index": 222,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 714.5522093947045,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 34,
+        "steps": 115,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 345.6445259839483,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 7,
+        "steps": 176,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.2240544706583023,
+        0.074254110455513,
+        0.02062571793794632
+      ],
+      "prob_gain": 0.48446470499038696,
+      "prob_harm": 0.44262170791625977,
+      "root_id": "root_0226_goal_entry_pending_exit",
+      "root_index": 226,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 345.6445259839483,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 7,
+        "steps": 176,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 350.07227353375634,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 20,
+        "steps": 113,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.21274755895137787,
+        0.12432520091533661,
+        0.07819768041372299
+      ],
+      "prob_gain": 0.5276424288749695,
+      "prob_harm": 0.4607444703578949,
+      "root_id": "root_0233_goal_entry_pending_exit",
+      "root_index": 233,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 350.07227353375634,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 20,
+        "steps": 113,
+        "strict": false
+      }
+    },
+    {
+      "candidate_id": 0,
+      "candidate_name": "zero",
+      "chosen_outcome": {
+        "benchmark": true,
+        "discounted_return": 575.3482008224177,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 127,
+        "steps": 48,
+        "strict": false
+      },
+      "harm": 0,
+      "predicted_progress": [
+        -0.27837350964546204,
+        0.18436136841773987,
+        0.10084015876054764
+      ],
+      "prob_gain": 0.4780851900577545,
+      "prob_harm": 0.46213871240615845,
+      "root_id": "root_0238_goal_entry_pending_exit",
+      "root_index": 238,
+      "root_type": "goal_entry_pending_exit",
+      "selected_candidate_id": 0,
+      "strong_gain": 0,
+      "zero_outcome": {
+        "benchmark": true,
+        "discounted_return": 575.3482008224177,
+        "drop": false,
+        "entry_after_root": false,
+        "goal_exit_after_root": true,
+        "goal_steps": 5,
+        "max_goal_streak": 127,
+        "steps": 48,
+        "strict": false
+      }
+    }
+  ],
+  "threshold": {
+    "gain": 0.3,
+    "harm": 0.01
+  },
+  "top1_regret_rate": 1.0,
+  "top1_regret_roots": 4,
+  "zero_benchmark_rate": 0.7692307692307693,
+  "zero_goal_exit_rate": 0.38461538461538464,
+  "zero_strict_rate": 0.36538461538461536
+}

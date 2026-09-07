@@ -1,0 +1,17 @@
+project: V6.1 Phase-balanced Direct Action Distillation
+device: cuda:0
+vision_checkpoint: runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt
+e2_checkpoint: runs/v6/checkpoints/e2.pt
+d1_sequences: runs/v6/d1_sequences.h5
+run_dir: runs/v6_1/direct_action
+results_dir: results/v6_1
+seed: 61102
+batch_size: 128
+warmup_epochs: 2
+finetune_epochs: 3
+learning_rate: 0.0003
+weight_decay: 0.00001
+e2_preservation_coefficient: 0.2
+near_position_error: 0.10
+near_orientation_similarity: 0.90
+hidden_dims: [128, 128]

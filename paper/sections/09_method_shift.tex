@@ -1,0 +1,11 @@
+\hypertarget{ux4ece-action-refinement-ux8f6cux5411ux72b6ux6001ux91cdux5efa}{%
+\section{从 action refinement 转向状态重建}\label{ux4ece-action-refinement-ux8f6cux5411ux72b6ux6001ux91cdux5efa}}
+
+\hypertarget{ux4eceux52a8ux4f5cux4ef7ux503cux9884ux6d4bux8f6cux5411ux72b6ux6001ux4f30ux8ba1}{%
+\subsection{从动作价值预测转向状态估计}\label{ux4eceux52a8ux4f5cux4ef7ux503cux9884ux6d4bux8f6cux5411ux72b6ux6001ux4f30ux8ba1}}
+
+V2--V5 共同指向一个更合适的分解。要选择局部 residual，模型必须从有限视觉历史同时预测候选动作、接触模式变化以及几十步后的任务事件，本质上是在学习一个高方差、长时的 counterfactual action-value。正负 outcome 稀疏，且相似 root 的最优候选可多模态。相反，仿真能够为每一步提供物体位置、速度、角速度、姿态和目标姿态等稠密标签；这些量是``当前状态是什么''的监督，不需要把长时控制结果压进一个二元 gate。
+
+因此，最终方法不再预测``怎样改 Vision AWAC 的动作''，而是预测 Vision 缺失的 primitive physical state，把它转换成 Oracle observation，并从 episode 第一步到结束连续执行同一个 Frozen Oracle controller。这样同时避免 Q 排序、局部 winner 回归和 controller stitching。
+
+\textbf{本章结论。} Residual 的幅度、安全参数化和真实 branch 标签都被逐步单独验证，但仍不足以建立可靠在线交接。最可信的瓶颈是：接触敏感闭环中，局部动作的长时 gain/harm 比当前隐藏物理状态更难从视觉历史监督；这直接推动了从动作级修正到状态级蒸馏的方法转向。

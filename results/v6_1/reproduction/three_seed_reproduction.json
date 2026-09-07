@@ -1,0 +1,58 @@
+{
+  "benchmark_delta_vs_e0": 0.13,
+  "benchmark_mean": 0.61,
+  "benchmark_std": 0.040000000000000036,
+  "e0": {
+    "benchmark_success": 0.48,
+    "benchmark_success_count": 48,
+    "drop_count": 1,
+    "episode_count": 100,
+    "goal_entry_count": 48,
+    "goal_entry_rate": 0.48,
+    "goal_exit_after_entry_rate": 0.5625,
+    "goal_exit_count": 27,
+    "mean_max_consecutive_goal_steps": 44.94,
+    "nonfinite_count": 0,
+    "policy": "Frozen Vision AWAC",
+    "strict_stable_success": 0.23,
+    "strict_success_count": 23,
+    "twenty_step_hold_count": 34,
+    "twenty_step_hold_rate": 0.34
+  },
+  "episodes_per_seed": 100,
+  "evaluation_seed_start": 7300000,
+  "pooled_episode_count": 300,
+  "seeds": [
+    {
+      "benchmark_success": 0.65,
+      "checkpoint": "runs/v6/checkpoints/e2.pt",
+      "goal_entry_rate": 0.65,
+      "goal_exit_after_entry_rate": 0.5384615384615384,
+      "recipe_seed": 606,
+      "strict_stable_success": 0.4,
+      "twenty_step_hold_rate": 0.59
+    },
+    {
+      "benchmark_success": 0.61,
+      "checkpoint": "runs/v6_1/reproduction/seed_1606/e2.pt",
+      "goal_entry_rate": 0.61,
+      "goal_exit_after_entry_rate": 0.5409836065573771,
+      "recipe_seed": 1606,
+      "strict_stable_success": 0.37,
+      "twenty_step_hold_rate": 0.52
+    },
+    {
+      "benchmark_success": 0.57,
+      "checkpoint": "runs/v6_1/reproduction/seed_2606/e2.pt",
+      "goal_entry_rate": 0.57,
+      "goal_exit_after_entry_rate": 0.5789473684210527,
+      "recipe_seed": 2606,
+      "strict_stable_success": 0.28,
+      "twenty_step_hold_rate": 0.47
+    }
+  ],
+  "strict_delta_vs_e0": 0.12000000000000002,
+  "strict_mean": 0.35000000000000003,
+  "strict_std": 0.06244997998398397,
+  "three_seed_gate_pass": true
+}

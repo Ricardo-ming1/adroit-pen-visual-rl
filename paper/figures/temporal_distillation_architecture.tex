@@ -1,0 +1,39 @@
+\begin{figure}[htbp]
+  \centering
+  \resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[
+    node distance=5mm and 7mm,
+    box/.style={draw,rounded corners,align=center,minimum height=8mm,minimum width=25mm,fill=blue!5,font=\footnotesize},
+    frozen/.style={box,fill=green!8},
+    supervision/.style={box,fill=orange!10,dashed},
+    arrow/.style={-{Stealth[length=2mm]},thick},
+    sup/.style={-{Stealth[length=2mm]},dashed,orange!80!black}
+  ]
+    \node[box] (rgb) {8-step causal\\RGB};
+    \node[box,below=of rgb] (prop) {deployable\\proprioception};
+    \node[box,below=of prop] (acthist) {executed-action\\history};
+    \node[box,right=of rgb] (cnn) {estimator-private\\CNN};
+    \node[box,right=of prop] (gru) {GRU-128};
+    \node[box,right=of gru] (state) {primitive hidden state\\position / velocity / 6D rotation};
+    \node[box,right=of state] (adapter) {deterministic Oracle\\observation adapter};
+    \node[frozen,right=of adapter] (oracle) {original normalizer\\+ Frozen Oracle AWAC};
+    \node[box,right=of oracle] (output) {deterministic\\24D action};
+    \node[supervision,above=of state] (label) {simulator state + Oracle action\\training supervision only};
+
+    \draw[arrow] (rgb) -- (cnn);
+    \draw[arrow] (cnn) -- (gru);
+    \draw[arrow] (prop) -- (gru);
+    \draw[arrow] (acthist) -- (gru);
+    \draw[arrow] (gru) -- (state);
+    \draw[arrow] (state) -- (adapter);
+    \draw[arrow] (prop.east) -| (adapter.south);
+    \draw[arrow] (adapter) -- (oracle);
+    \draw[arrow] (oracle) -- (output);
+    \draw[arrow] (output.south) |- (acthist.east);
+    \draw[sup] (label) -- (state);
+    \draw[sup] (label.east) -| (oracle.north);
+  \end{tikzpicture}%
+  }
+  \caption{Temporal Visual-State Distillation 架构。训练集为 544 条仿真轨迹、108,800 个时序样本；虚线 privileged 信息只形成训练监督，部署路径只读取 RGB、proprioception 与动作历史。}
+  \label{fig:temporal-distillation}
+\end{figure}

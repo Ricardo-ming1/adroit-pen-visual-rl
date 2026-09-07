@@ -1,0 +1,20 @@
+\hypertarget{ux89c6ux89c9-bcawac-ux4e0e-oracle-ux57faux7ebf}{%
+\section{视觉 BC、AWAC 与 Oracle 基线}\label{ux89c6ux89c9-bcawac-ux4e0e-oracle-ux57faux7ebf}}
+
+\hypertarget{bccritic-warm-up-ux4e0e-awac}{%
+\subsection{BC、critic warm-up 与 AWAC}\label{bccritic-warm-up-ux4e0e-awac}}
+
+Behavior Cloning 直接最大化数据动作在策略下的似然。它能复现示范动作，但没有显式处理闭环分布偏移：一个早期小偏差会把视觉 observation 推到示范未覆盖的区域。Offline AWAC（Advantage-Weighted Actor-Critic）在双 Q critic warm-up 后，对数据动作按估计优势加权：
+
+\[
+\mathcal L_{\mathrm{AWAC}}
+=-\mathbb E_{(s,a)\sim D}
+\left[\bar w(s,a)\log\pi_\theta(a\mid s)\right],\quad
+\bar w=\operatorname{clip}\!\left(\exp\frac{Q(s,a)-V^\pi(s)}{\lambda},0,w_{\max}\right).
+\]
+
+直觉上，AWAC 仍然模仿数据内动作，但更重视 critic 判断为优于当前策略采样动作的部分；截断优势权重避免少量错误 Q 值支配 actor。项目实现参考 \href{https://arxiv.org/abs/2006.09359}{AWAC 原始工作（Nair et al.）}，并在 BC、AWAC 和后续 PPO 中统一 stochastic actor 与归一化动作语义。
+
+V1 冻结评测中，Vision BC 在 3 个训练 seed、600 个 episode 上得到 37.3\% Benchmark、14.7\% Strict；BC+AWAC 为 51.0\% / 20.3\%。最初 Full（AWAC 后接带 KL/BC anchor 的 PPO）在 5 seed、1,000 episodes 上为 52.7\% / 19.9\%，no-anchor 在 3 seed、600 episodes 上为 51.3\% / 20.5\%。这些数字来自不同训练 seed 数量，但使用各自冻结的正式 V1 汇总；它们支持``AWAC 相对 BC 有明显收益''，不支持``PPO anchor 稳定提高 AWAC''。
+
+\autocite{nair2020awac}

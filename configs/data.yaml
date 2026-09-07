@@ -1,0 +1,28 @@
+project: Adroit Pen Reorientation
+dataset_id: D4RL/pen/human-v2
+dataset_path: data/minari
+output_path: data/processed/pen_human_visual.hdf5
+validation_path: results/data_validation.json
+sample_dir: results/data_samples
+environment_id: AdroitHandPen-v1
+reward_type: dense
+horizon: 200
+image_size: 84
+frame_stack: 4
+camera:
+  camera_id: -1
+  distance: 1.0
+  azimuth: -45.0
+  elevation: -25.0
+  lookat: [0.0, -0.2, 0.22]
+renderer: mujoco-egl
+action_space: normalized_-1_1
+split_seed: 123
+train_episodes: 20
+validation_episodes: 5
+validation_state_samples: 100
+validation_step_samples: 32
+source_observation_atol: 3.0e-2
+restored_observation_atol: 1.0e-10
+state_atol: 1.0e-8
+reward_atol: 1.0e-9

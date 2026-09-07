@@ -1,0 +1,5 @@
+experiment,status,reason
+100k single-seed continuation,not_run,"30k final point failed benchmark, strict, and goal-entry floors"
+lambda_anchor=0.10 rescue,not_run,rescue was allowed only for isolated correction/z failures
+3-seed safe handoff,not_run,single-seed 100k prerequisite was not reached
+H0/H1 hold curriculum,not_run,3-seed safe handoff prerequisite was not reached

@@ -1,0 +1,5 @@
+/build/*
+/dist/*.pdf
+/dist/*.zip
+!/build/.gitkeep
+!/dist/.gitkeep

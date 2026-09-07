@@ -1,0 +1,97 @@
+\hypertarget{ux590dux73b0ux8bf4ux660e}{%
+\section{复现说明}\label{ux590dux73b0ux8bf4ux660e}}
+
+\hypertarget{ux5febux901fux8bc4ux6d4bux547dux4ee4}{%
+\subsection{快速评测命令}\label{ux5febux901fux8bc4ux6d4bux547dux4ee4}}
+
+先安装锁定依赖并准备 Minari 数据、Vision/Oracle AWAC checkpoint 与 E2 checkpoint。以下命令只评估已存在 checkpoint，不训练：
+
+\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\small]
+conda env create -f environment.yml
+conda activate adroit-pen
+
+python3 -m scripts.evaluate_state_distilled_policy \
+  --config configs/temporal_state_distillation.yaml \
+  --checkpoint /path/to/e2.pt \
+  --episodes 100 \
+  --seed-start 30000 \
+  --output /tmp/e2_eval100.json
+\end{Verbatim}
+
+若要复现 V6.1 的 300-episode confirmation，应先把 \texttt{configs/v6\_1\_confirmation.yaml} 中的 checkpoint/source 路径改为本机实际位置，并确保 E2 SHA-256 匹配：
+
+\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\small]
+python3 -m scripts.confirm_e2 --config configs/v6_1_confirmation.yaml
+\end{Verbatim}
+
+该命令会重新执行 300 episodes，成本明显高于 quick evaluation。本文写作阶段没有运行它；仓库已有结果直接读取自 \nolinkurl{results/v6_1/phase_a_confirmation300.json}。
+
+\hypertarget{ux4eceux6570ux636eux5230-e2-ux7684ux5b8cux6574ux590dux73b0}{%
+\subsection{从数据到 E2 的完整复现}\label{ux4eceux6570ux636eux5230-e2-ux7684ux5b8cux6574ux590dux73b0}}
+
+\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\small]
+# 1) 构建 544-episode、108,800-transition 时序监督数据
+python3 -m scripts.build_state_distillation_dataset \
+  --config configs/temporal_state_distillation.yaml \
+  --output runs/v6/source_sequences.h5
+
+# 2) E1：冻结 CNN，训练 GRU 与 heads
+python3 -m scripts.train_state_estimator \
+  --config configs/temporal_state_distillation.yaml \
+  --stage e1 \
+  --data runs/v6/source_sequences.h5 \
+  --output runs/v6/checkpoints/e1.pt
+
+# 3) E2：从 E1 初始化，只解冻 estimator 最后一个 CNN block
+python3 -m scripts.train_state_estimator \
+  --config configs/temporal_state_distillation.yaml \
+  --stage e2 \
+  --data runs/v6/source_sequences.h5 \
+  --initialize runs/v6/checkpoints/e1.pt \
+  --output runs/v6/checkpoints/e2.pt
+
+# 4) 复现额外训练 seed（示例）
+python3 -m scripts.reproduce_e2_seed \
+  --recipe-seed 1606 \
+  --confirmation-config configs/v6_1_confirmation.yaml \
+  --v6-config configs/temporal_state_distillation.yaml
+\end{Verbatim}
+
+数据生成脚本按 episode seed 可跳过已经存在的条目；E1/E2 checkpoint 和 curve 写入配置指定的 \texttt{runs/v6/}。大型 HDF5 与 checkpoint 默认不应提交 Git。复现前应使用 \nolinkurl{scripts/validate_oracle_observation_adapter.py} 验证 primitive-to-45D adapter，并确认视觉/Oracle checkpoint、相机和环境版本一致。
+
+\hypertarget{ux6700ux7ec8-checkpointux786cux4ef6ux4e0eux7ed3ux679cux7d22ux5f15}{%
+\subsection{最终 checkpoint、硬件与结果索引}\label{ux6700ux7ec8-checkpointux786cux4ef6ux4e0eux7ed3ux679cux7d22ux5f15}}
+
+最终 E2 是单一预选 checkpoint，权威 SHA-256 为：
+
+\begin{Verbatim}[breaklines=true,breakanywhere=true,fontsize=\small]
+cc35a4130cb33df92fb635e58f125a219da76a2a89fd4109ba7e9267a3080b22
+\end{Verbatim}
+
+权威实验产物在公开配置中记为 \nolinkurl{runs/v6/checkpoints/e2.pt}；复现时可以使用其他本机路径，但必须校验相同 SHA。配置使用单 CUDA device；项目运行约束为单张 NVIDIA GeForce RTX 5090。现有正式 summary 没有记录可靠的端到端 wall-clock，因此本文不编造训练小时数。计算需求主要来自 544 条 trajectory 渲染/采集以及 E1/E2 的约 5,397 次 optimizer update。
+
+主要结果文件：
+
+\begin{itemize}
+\tightlist
+\item
+  数据恢复：\href{../results/data_validation.json}{\texttt{results/data\_validation.json}}
+\item
+  V1 主结果与视觉干预：\href{../results/summary.csv}{\texttt{results/summary.csv}}、\href{../results/visual_interventions.csv}{\texttt{results/visual\_interventions.csv}}
+\item
+  V2/V3：\href{../results/v2/residual_sac_summary.csv}{\nolinkurl{results/v2/residual_sac_summary.csv}}、\href{../results/v3/experiment_status.json}{\texttt{results/v3/experiment\_status.json}}
+\item
+  V4/V5：\href{../results/v4/summary.json}{\texttt{results/v4/summary.json}}、\href{../results/v5/summary.csv}{\texttt{results/v5/summary.csv}}
+\item
+  V6 消融：\href{../results/v6/summary.csv}{\texttt{results/v6/summary.csv}}、\href{../results/v6/summary.json}{\texttt{results/v6/summary.json}}
+\item
+  V6.1 confirmation：\href{../results/v6_1/phase_a_confirmation300.json}{\nolinkurl{results/v6_1/phase_a_confirmation300.json}}
+\item
+  fixed-entry hold：\href{../results/v6_1/fixed_entry_hold200.json}{\nolinkurl{results/v6_1/fixed_entry_hold200.json}}
+\item
+  3-seed：\href{../results/v6_1/reproduction/three_seed_reproduction.json}{\nolinkurl{results/v6_1/reproduction/three_seed_reproduction.json}}
+\item
+  frozen test：\href{../results/v6_1/frozen_test.json}{\texttt{results/v6\_1/frozen\_test.json}}
+\end{itemize}
+
+\textbf{本章结论。} 项目的可复现主线不是``在线 RL 最终成功''，而是数据重建、offline AWAC、失败机制定位和 Temporal Visual-State Distillation。最终 checkpoint、环境版本、评测 bank 与结果文件均被明确索引；精确训练 wall-clock 未被历史结果记录，因此如实留空而不估算。

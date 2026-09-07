@@ -1,0 +1,9 @@
+{
+  "bank_path": "runs/v6_1/fixed_entry_roots.pt",
+  "future_exit_filter_used": false,
+  "minimum_remaining_steps": 50,
+  "roots": 200,
+  "source_episodes_attempted": 376,
+  "source_seed_end": 7100375,
+  "source_seed_start": 7100000
+}

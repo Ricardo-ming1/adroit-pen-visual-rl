@@ -1,0 +1,62 @@
+{
+  "branch_transitions": 464457,
+  "by_root_type": {
+    "far_pre_goal_failure": {
+      "roots": 60,
+      "roots_with_any_harm": 9,
+      "roots_with_any_strong_gain": 7
+    },
+    "goal_entry_pending_exit": {
+      "roots": 60,
+      "roots_with_any_harm": 20,
+      "roots_with_any_strong_gain": 10
+    },
+    "near_goal": {
+      "roots": 60,
+      "roots_with_any_harm": 10,
+      "roots_with_any_strong_gain": 6
+    },
+    "stable_hold": {
+      "roots": 60,
+      "roots_with_any_harm": 7,
+      "roots_with_any_strong_gain": 5
+    }
+  },
+  "candidate_records": 4080,
+  "candidates_per_root": 17,
+  "common_horizon": true,
+  "exits_avoided": 3,
+  "oracle_benchmark_rate": 0.7125,
+  "oracle_harms": 3,
+  "oracle_strict_rate": 0.43333333333333335,
+  "roots": 240,
+  "roots_with_strong_gain": 28,
+  "source_split": "V4 source-trajectory split",
+  "strong_gain_rate": 0.11666666666666667,
+  "v4_root_metadata": {
+    "complete": true,
+    "counts": {
+      "far_pre_goal_failure": 60,
+      "goal_entry_pending_exit": 60,
+      "near_goal": 60,
+      "stable_hold": 60
+    },
+    "dev_roots": 52,
+    "dev_source_episodes": 31,
+    "maximum_roots_per_source_trajectory": 2,
+    "quotas": {
+      "far_pre_goal_failure": 60,
+      "goal_entry_pending_exit": 60,
+      "near_goal": 60,
+      "stable_hold": 60
+    },
+    "refreshed_root_qpos_max_abs": 0.0,
+    "source_episodes_scanned": 244,
+    "source_rollout_transitions": 48800,
+    "train_roots": 188,
+    "train_source_episodes": 126,
+    "training_seed_start": 5000000
+  },
+  "zero_benchmark_rate": 0.675,
+  "zero_strict_rate": 0.3458333333333333
+}

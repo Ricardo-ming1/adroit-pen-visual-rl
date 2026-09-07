@@ -1,0 +1,56 @@
+project: V6.1 E2 Independent Confirmation and Hold Rescue
+device: cuda:0
+vision_checkpoint: runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt
+oracle_checkpoint: runs/development/oracle_weighted_awac/full_seed_0/best_offline_awac_validation.pt
+e2_checkpoint: runs/v6/checkpoints/e2.pt
+e2_checkpoint_sha256: cc35a4130cb33df92fb635e58f125a219da76a2a89fd4109ba7e9267a3080b22
+v6_summary: results/v6/summary.json
+v6_required_status: STOP_V6_PROMOTION_GATE_NOT_MET
+run_dir: runs/v6_1
+results_dir: results/v6_1
+
+phase_a:
+  seed_start: 7000000
+  episodes: 300
+  chunk_size: 10
+  bootstrap_replicates: 100000
+  bootstrap_seed: 61101
+  acquisition_benchmark_delta: 0.05
+  acquisition_strict_floor: 0.0
+  strict_delta: 0.05
+  strict_benchmark_floor: 0.0
+
+fixed_entry_hold:
+  seed_start: 7100000
+  roots: 200
+  maximum_source_episodes: 600
+  rollout_steps: 50
+  minimum_remaining_steps: 50
+  oracle_gap_trigger: 0.05
+  entry_to_strict_gap_trigger: 0.05
+
+phase_b_trigger:
+  minimum_benchmark_lift: 0.05
+  maximum_strict_lift_for_acquisition_pattern: 0.049999
+  require_oracle_hold_gap: true
+
+phase_b_development:
+  seed_start: 30000
+  episodes: 100
+  benchmark_vs_e2_floor: -0.02
+  strict_vs_e2_floor: 0.03
+
+phase_b_confirmation:
+  seed_start: 7200000
+  episodes: 300
+  benchmark_vs_e2_floor: -0.02
+  strict_vs_e2_floor: 0.03
+
+reproduction:
+  recipe_seeds: [606, 1606, 2606]
+  evaluation_seed_start: 7300000
+  evaluation_episodes: 100
+  source_sequences: runs/v6/source_sequences.h5
+  d1_sequences: runs/v6/d1_sequences.h5
+  frozen_test_seed_start: 50000
+  frozen_test_episodes: 200

@@ -1,0 +1,53 @@
+{
+  "best_dev_loss": 0.6663124324202537,
+  "checkpoint": "runs/v6/checkpoints/e2.pt",
+  "curve": [
+    {
+      "dev_action": 0.24816018326431513,
+      "dev_auxiliary": 0.6644057404339313,
+      "dev_geodesic": 0.4360366077184677,
+      "dev_state": 0.3446248387694359,
+      "dev_state_low": 0.12289513119235634,
+      "dev_total": 0.7256661827087403,
+      "epoch": 1,
+      "train_total": 0.2662154069477173
+    },
+    {
+      "dev_action": 0.20475701410882174,
+      "dev_auxiliary": 0.6831570279844105,
+      "dev_geodesic": 0.4162018852472305,
+      "dev_state": 0.32492402966022493,
+      "dev_state_low": 0.11328442767187953,
+      "dev_total": 0.6663124324202537,
+      "epoch": 2,
+      "train_total": 0.21543903270042977
+    },
+    {
+      "dev_action": 0.19358415270261467,
+      "dev_auxiliary": 0.8323680521752685,
+      "dev_geodesic": 0.4085140231847763,
+      "dev_state": 0.3166176312148571,
+      "dev_state_low": 0.10887236267626285,
+      "dev_total": 0.6766753950595855,
+      "epoch": 3,
+      "train_total": 0.18682640667246164
+    }
+  ],
+  "dev_samples": 10000,
+  "epochs": 3,
+  "offline_diagnostics": {
+    "angular_velocity_rmse": 1.0877678394317627,
+    "hidden_state_normalized_rmse": 0.7623318433761597,
+    "object_orientation_geodesic_deg": 18.160755157470703,
+    "oracle_action_rmse": 0.10833857953548431,
+    "oracle_action_rmse_p95": 0.22417029738426208,
+    "samples": 10000,
+    "target_orientation_geodesic_deg": 5.685856819152832
+  },
+  "source_files": [
+    "runs/v6/source_sequences.h5"
+  ],
+  "stage": "e2",
+  "train_samples": 98800,
+  "updates": 2313
+}

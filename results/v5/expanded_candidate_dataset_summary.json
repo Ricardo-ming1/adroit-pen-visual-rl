@@ -1,0 +1,92 @@
+{
+  "branch_transitions": 2413490,
+  "by_root_type": {
+    "far_pre_goal_failure": {
+      "roots": 120,
+      "roots_with_any_harm": 15,
+      "roots_with_any_strong_gain": 14
+    },
+    "goal_entry_pending_exit": {
+      "roots": 600,
+      "roots_with_any_harm": 199,
+      "roots_with_any_strong_gain": 128
+    },
+    "near_goal": {
+      "roots": 180,
+      "roots_with_any_harm": 29,
+      "roots_with_any_strong_gain": 17
+    },
+    "stable_hold": {
+      "roots": 300,
+      "roots_with_any_harm": 39,
+      "roots_with_any_strong_gain": 19
+    }
+  },
+  "candidate_records": 20400,
+  "candidates_per_root": 17,
+  "common_horizon": true,
+  "exits_avoided": 22,
+  "oracle_benchmark_rate": 0.8633333333333333,
+  "oracle_harms": 13,
+  "oracle_strict_rate": 0.4666666666666667,
+  "root_collection": {
+    "complete": true,
+    "counts": {
+      "far_pre_goal_failure": 120,
+      "goal_entry_pending_exit": 600,
+      "near_goal": 180,
+      "stable_hold": 300
+    },
+    "dev_new_roots": 197,
+    "initial_roots": 240,
+    "maximum_roots_per_source_trajectory": 2,
+    "new_roots": 960,
+    "quotas": {
+      "far_pre_goal_failure": 120,
+      "goal_entry_pending_exit": 600,
+      "near_goal": 180,
+      "stable_hold": 300
+    },
+    "source_episodes_scanned": 2155,
+    "source_rollout_transitions": 431000,
+    "train_new_roots": 763,
+    "training_seed_start": 5000000
+  },
+  "roots": 1200,
+  "roots_with_strong_gain": 178,
+  "source_split": "V4 source-trajectory split",
+  "strong_gain_rate": 0.14833333333333334,
+  "targeted_distribution": {
+    "far_pre_goal_failure": 120,
+    "goal_entry_pending_exit": 600,
+    "near_goal": 180,
+    "stable_hold": 300
+  },
+  "targeted_expansion": true,
+  "v4_root_metadata": {
+    "complete": true,
+    "counts": {
+      "far_pre_goal_failure": 60,
+      "goal_entry_pending_exit": 60,
+      "near_goal": 60,
+      "stable_hold": 60
+    },
+    "dev_roots": 52,
+    "dev_source_episodes": 31,
+    "maximum_roots_per_source_trajectory": 2,
+    "quotas": {
+      "far_pre_goal_failure": 60,
+      "goal_entry_pending_exit": 60,
+      "near_goal": 60,
+      "stable_hold": 60
+    },
+    "refreshed_root_qpos_max_abs": 0.0,
+    "source_episodes_scanned": 244,
+    "source_rollout_transitions": 48800,
+    "train_roots": 188,
+    "train_source_episodes": 126,
+    "training_seed_start": 5000000
+  },
+  "zero_benchmark_rate": 0.8475,
+  "zero_strict_rate": 0.3525
+}

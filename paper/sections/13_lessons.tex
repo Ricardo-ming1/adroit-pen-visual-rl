@@ -1,0 +1,67 @@
+\hypertarget{ux5931ux8d25ux5b9eux9a8cux5e26ux6765ux7684ux6280ux672fux8ba4ux8bc6}{%
+\section{失败实验带来的技术认识}\label{ux5931ux8d25ux5b9eux9a8cux5e26ux6765ux7684ux6280ux672fux8ba4ux8bc6}}
+
+\hypertarget{ux4e3aux4ec0ux4e48-25-ux6761-human-demonstrations-ux8db3ux4ee5ux542fux52a8-awacux5374ux4e0dux8db3ux4ee5ux72ecux7acbux8badux7ec3ux6700ux7ec8ux89c6ux89c9ux7b56ux7565}{%
+\subsection{为什么 25 条 human demonstrations 足以启动 AWAC，却不足以独立训练最终视觉策略}\label{ux4e3aux4ec0ux4e48-25-ux6761-human-demonstrations-ux8db3ux4ee5ux542fux52a8-awacux5374ux4e0dux8db3ux4ee5ux72ecux7acbux8badux7ec3ux6700ux7ec8ux89c6ux89c9ux7b56ux7565}}
+
+25 条 human demo 的价值是提供一个高质量动作先验。Adroit 的 24 维动作空间很大，全随机探索几乎不可能在有限样本内形成稳定抓持；示范把 BC 和 AWAC 放到一个能够接触、操纵并偶尔完成目标的分布附近。AWAC 又通过双 Q 的优势权重，在不离开数据支持太远的前提下偏向更好的示范动作，所以它可以把 Visual BC 的 37.3\% Benchmark 提高到 51.0\%。从这个角度，25 条轨迹是``启动控制器''的关键数据。
+
+但 4,975 transitions 对视觉时序估计明显太少。首先，25 条轨迹只覆盖有限物体姿态、遮挡和接触相位；其次，动作监督只告诉网络在某个 observation 下示范者做了什么，并不显式告诉它笔的角速度、目标旋转或当前误差方向；再次，单步 action 可以由多个隐含状态共同决定，行为克隆 loss 对物理状态的可辨识性约束很弱。CNN 完全可能学到对当前动作有用、却丢弃长期 hold 所需动态的表示，这正是 temporal shuffle 不退化所提示的现象。
+
+因此，最终 E2 并不是从 25 条示范直接训练出的纯视觉 policy。更准确的数据因果链是：human demo 训练 offline Oracle/Vision AWAC controller；544 条仿真 rollout 再为 108,800 个时刻提供 primitive state、phase、exit risk 和 Frozen Oracle action；state estimator 借此学会把 8-step 可部署历史映射到 Oracle controller 需要的 observation。示范解决``动作先验''，稠密仿真监督解决``视觉状态辨识''，两者承担不同角色。
+
+\hypertarget{ux4e3aux4ec0ux4e48-108800-ux6761ux7a20ux5bc6ux72b6ux6001ux76d1ux7763ux6bd4ux7a00ux758f-task-outcome-ux66f4ux6709ux6548}{%
+\subsection{为什么 108,800 条稠密状态监督比稀疏 task outcome 更有效}\label{ux4e3aux4ec0ux4e48-108800-ux6761ux7a20ux5bc6ux72b6ux6001ux76d1ux7763ux6bd4ux7a00ux758f-task-outcome-ux66f4ux6709ux6548}}
+
+在 residual 或 branch 方法里，一个 root 通常只产生``这个候选最终 gain/harm''的稀疏标签。任务事件可能要几十步后才发生，同一 correction 在不同接触微状态下会有不同结果；positive roots 数量也远少于全部候选。即使 V5 运行了 240 多万 branch transitions，真正 strong-gain roots 只有 178 个，selector 仍要从高度不平衡、反事实且多模态的结果中学习排序。
+
+状态蒸馏则把每条 200-step trajectory 的每一步都变成监督样本。object position、rotation、linear/angular velocity 和 target rotation 是连续标签；即使该 episode 最终失败，中间每一步仍能为视觉几何和动力学提供信息。学习目标从``预测一个动作是否会在未来改变成功事件''降为``解释最近八帧对应的当前物理状态''，监督密度、局部平滑性和可诊断性都更好。
+
+这并不意味着状态估计天然简单。单相机遮挡、旋转对称性和速度推断仍然困难；E2 的 object orientation dev error 仍有 18.16°。区别在于误差可以被拆成明确变量，且能通过 action-consistency 聚焦到 controller 敏感方向。训练失败时可以观察 rotation geodesic、angular velocity 或 action RMSE，而不是只看到一个高方差的 episode return。
+
+\hypertarget{ux4e3aux4ec0ux4e48ux7a00ux758fux957fux65f6ux6536ux76caux9884ux6d4bux6bd4ux77acux65f6ux72b6ux6001ux91cdux5efaux56f0ux96be}{%
+\subsection{为什么稀疏长时收益预测比瞬时状态重建困难}\label{ux4e3aux4ec0ux4e48ux7a00ux758fux957fux65f6ux6536ux76caux9884ux6d4bux6bd4ux77acux65f6ux72b6ux6001ux91cdux5efaux56f0ux96be}}
+
+候选动作的真实长时收益不是当前图像和动作的简单函数，它还依赖不可见接触力、未来控制器反馈和是否跨越接触模式边界。若 branch intervention 只执行三到五步，之后 outcome 又受 Frozen Vision AWAC 如何恢复影响；标签同时混合了候选质量、controller stitching 与基础策略鲁棒性。V5 中 Oracle takeover 同时产生 205 gain 和 223 harm，就是这一混合效应的实证。
+
+从统计角度看，candidate ranker 试图近似的是 \(Q^{\pi_{\text{after}}}(h_t,c)\)：给定部分可观测历史 \(h_t\)，先执行候选 \(c\)，再切回某个后续策略。它既要推断隐藏状态，又要积分未来随机接触结果。state estimator 近似的则是 \(p(s_t\mid h_t)\) 的一个确定性任务相关表示，并把已有 Frozen Oracle policy 作为控制求解器。前者把感知和控制信用分配耦合在一起，后者显式解耦。
+
+项目没有证明``所有情况下状态蒸馏都优于 RL''。它只证明在当前数据规模、单任务和接触敏感闭环中，已尝试的 Q/residual/counterfactual selector 无法达到安全门槛，而稠密状态监督形成了可复现收益。若拥有大量高质量 online interactions、更强 uncertainty estimation 或真实接触传感，结论可能不同。
+
+\hypertarget{ux4e3aux4ec0ux4e48-last-block-adaptation-ux4f5cux7528ux663eux8457}{%
+\subsection{为什么 last-block adaptation 作用显著}\label{ux4e3aux4ec0ux4e48-last-block-adaptation-ux4f5cux7528ux663eux8457}}
+
+E1 与 E2 的唯一区别不是有没有 GRU------两者都有相同 GRU-128、同一 primitive head 和同一 source data。区别在于 E1 完全冻结 CNN，E2 只解冻 estimator 私有 CNN 的最后一个 block 与 projection。E1 为 65\% / 22\%，E2 为 78\% / 38\%，说明已有 visual latent 虽能支持 AWAC action，但不足以线性或递归恢复控制所需的显式动态。
+
+低层卷积通常保留边缘、颜色和局部纹理，目标绿色笔和手指轮廓已能被捕获；若全量解冻，在 108,800 个高度相关 simulation frames 上容易破坏这些通用特征，且会引入更多 seed 方差。最后一个 block 靠近任务语义，更适合重新组织``哪种空间特征需要为 rotation/velocity 保留''。用小十倍的 CNN learning rate 做有限适配，在稳定性和任务特异性之间形成了合理折中。
+
+这里仍然应避免过度因果化。E1/E2 是一个关键组件对照，但不是对所有 layer-wise 组合的完整 factorial study；项目没有遍历解冻层数，也没有比较大型 backbone。能支持的结论是``在当前配方中，last-block adaptation 对闭环提升是必要的''，而不是``最后一层对所有视觉灵巧任务最优''。
+
+\hypertarget{ux4e3aux4ec0ux4e48-e2-ux6709ux65f6ux5728ux6709ux9650-bank-ux4e0aux540dux4e49ux9ad8ux4e8e-oracle}{%
+\subsection{为什么 E2 有时在有限 bank 上名义高于 Oracle}\label{ux4e3aux4ec0ux4e48-e2-ux6709ux65f6ux5728ux6709ux9650-bank-ux4e0aux540dux4e49ux9ad8ux4e8e-oracle}}
+
+Oracle observation 更完整，不意味着某一个有限 seed bank 上其冻结 policy 点估计必然高于由预测状态驱动的 policy。E2 的 estimator 会产生系统性平滑与偏差，相当于在 Oracle observation 前加入一个时序滤波器。对某些初始状态，这种平滑可能抑制 Oracle 对瞬时扰动的过度反应，或把 observation 推向 AWAC 训练分布中更熟悉的区域，从而偶然提高成功率。
+
+另一个简单原因是有限样本波动。旧 100-episode bank 上 Oracle 为 75\% / 42\%，独立 300 bank 上为 64.7\% / 36.3\%；不同初始状态组合可以改变名义排序。E2 在 300 bank 上为 68.3\% / 37.0\%，只比 Oracle 高 3.7/0.7pp，并没有提供 E2--Oracle 的预注册 paired significance 声明。真正被检验的主要比较是 E2 对 E0。
+
+因此报告只说``E2 在该 bank 上达到接近 Oracle 的闭环水平''。若要回答是否稳定超过 Oracle，需要在多个独立 bank、多个 Oracle training seed 和共同协议下专门检验，而且还要解释为何部分观测估计器能系统性优于真值输入。当前项目没有做这一扩展。
+
+\hypertarget{fixed-entry-ux957f-hold-ux7684ux65b9ux5411ux6027ux5deeux8dddux610fux5473ux7740ux4ec0ux4e48}{%
+\subsection{fixed-entry 长 hold 的方向性差距意味着什么}\label{fixed-entry-ux957f-hold-ux7684ux65b9ux5411ux6027ux5deeux8dddux610fux5473ux7740ux4ec0ux4e48}}
+
+整 episode Benchmark 增加 16--20.5pp，说明 E2 更容易获取目标；独立 confirmation 的 20-step hold 也从 118 增到 170。但在共同 200 first-entry roots 上，E2 的 20-step survival 与 E0 同为 61.5\%，50-step 为 47\%，低于 E0 的 50\% 和 Oracle 的 53\%。把这些结果放在一起，最稳妥的解释是：E2 主要改善了到达目标和形成短 hold window 的概率，长时间保持仍是未解决的薄弱环节。
+
+可能机制包括 angular velocity 估计噪声在闭环累积、视觉 estimator 的时序延迟、预测 state 偏离 Oracle AWAC 的 offline state manifold，以及 state loss 对 hold phase 样本权重不足。现有数据能提示这些方向，却没有逐项干预。例如，要验证速度误差机制，可以在同一 fixed-entry root 上只替换预测 angular velocity 为真值，其余预测保持不变；要验证延迟，可比较不同因果滤波长度并控制参数量。没有这些实验前，不应把某一假设写成已经定位的根因。
+
+长期 hold 也不适合再用一个简单 exit gate 补丁解决。V4/V5 已表明介入时机和候选效果难预测，硬 gate 可能减少 exit，也可能通过减少 entry 让条件比例变好。更好的下一步应在共同 root 上设计 hold-focused state supervision 或不改变 acquisition 的 representation regularization，并继续同时报告 entry、fixed-entry survival 和 Strict。
+
+\hypertarget{d1-ux66b4ux9732ux7684-acquisitionhold-ux53cdux5411ux79fbux52a8}{%
+\subsection{D1 暴露的 acquisition--hold 反向移动}\label{d1-ux66b4ux9732ux7684-acquisitionhold-ux53cdux5411ux79fbux52a8}}
+
+DAgger 的经典直觉是收集 student 访问状态，再由 teacher 标注以缓解 covariate shift。但这里 teacher supervision 不只是动作标签，而是视觉状态与 Oracle action；student 访问分布中可能包含大量已经失稳、遮挡严重或物体掉落前的状态。如果统一混合而不控制 phase，optimizer 会优先拟合数量多、误差大的偏离样本，牺牲 E2 在 acquisition 区域形成的细粒度表征。
+
+D1 从 E2 的 78\% Benchmark 降到 66\%，Strict 从 38\% 到 31\%，同时 Exit/Entry 看似从 62.82\% 降到 57.58\%。由于 entry 下降，较低 exit 不能证明 hold 变强。这是一个很好的指标陷阱：只优化条件失败率，模型可能通过不进入条件集合来``改善''。paired wins/losses 27/29 也显示 D1 并未形成净成功收益。
+
+如果继续研究，应该把 acquisition、near-goal 和 stable-hold 数据分层，保护 E2 source 的训练权重，并用共同 first-entry roots 选择模型，而不是只看自然 rollout 的 Exit/Entry。还可以约束新模型对 E2 在 acquisition states 上的 action/state 输出，避免普通聚合造成遗忘。这些是下一轮设计建议，不是本项目已经完成的实验。
+
+\textbf{本章结论。} 本项目的数据支持一个清晰分工：少量示范提供控制先验，稠密仿真监督补足视觉状态辨识，Frozen Oracle 把状态估计转换为连续闭环动作。已经证实的是 E2 的独立 paired 增益与 last-block adaptation 的关键性；长 hold 的具体误差来源、E2 偶尔名义高于 Oracle的机制和改进版 DAgger 仍属于待验证假设。

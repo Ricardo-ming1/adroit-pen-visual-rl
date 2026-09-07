@@ -1,0 +1,46 @@
+project: Adroit Pen Reorientation V2
+line: vision
+data_config: configs/data.yaml
+base_run_template: runs/frozen/vision/full_seed_{seed}
+base_checkpoint: best_offline_awac_validation.pt
+run_root: runs/v2/residual_sac
+device: cuda
+deterministic_torch: true
+residual_actor:
+  hidden_dims: [256, 256]
+  initial_log_std: -3.0
+  log_std_min: -5.0
+  log_std_max: 0.0
+critic:
+  hidden_dims: [256, 256]
+sac:
+  online_steps: 100000
+  residual_scale: 0.2
+  replay_capacity: 1000000
+  offline_fraction: 0.5
+  batch_size: 256
+  gamma: 0.99
+  tau: 0.005
+  actor_lr: 0.0001
+  critic_lr: 0.0003
+  temperature_lr: 0.0001
+  initial_temperature: 0.1
+  utd_ratio: 1
+  critic_warmup_steps: 5000
+  actor_update_start: 5000
+  target_entropy: -6.0
+  reward_scale: 0.02
+  eval_interval: 10000
+  checkpoint_interval: 10000
+  log_interval: 1000
+evaluation:
+  steps: [0, 10000, 20000, 40000, 60000, 80000, 100000]
+validation_seeds:
+  start: 30000
+  count: 50
+test_seeds:
+  start: 70000
+  count: 200
+online_seeds:
+  start: 2000000
+  per_training_seed_stride: 10000

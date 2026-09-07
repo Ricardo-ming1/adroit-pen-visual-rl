@@ -1,0 +1,7 @@
+stage,roots,candidate_records,coverage,precision,harm_rate,zero_benchmark,selected_or_oracle_benchmark,zero_strict,selected_or_oracle_strict,zero_goal_exit,selected_goal_exit,passes_selector
+initial_oracle_in_fixed_bank,240,4080,,,,0.6750,0.7125,0.3458,0.4333,,,upper_bound
+initial_privileged_branch_dev,52,884,0.0000,0.0000,0.0000,0.7692,0.7692,0.3654,0.3654,0.3846,0.3846,false
+initial_frozen_visual_branch_dev,52,884,0.0000,0.0000,0.0000,0.7692,0.7692,0.3654,0.3654,0.3846,0.3846,false
+expanded_oracle_in_fixed_bank,1200,20400,,,,0.8475,0.8633,0.3525,0.4667,,,upper_bound
+expanded_privileged_branch_dev,249,4233,0.1526,0.2105,0.1053,0.8835,0.8835,0.3775,0.3855,0.5904,0.5823,false
+oracle_chunk_augmented_privileged_dev,249,4482,0.1807,0.2889,0.1111,0.8835,0.8835,0.3775,0.4016,0.5904,0.5622,false

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visual-adroit-pen-rl"
+version = "0.1.0"
+description = "Visual Offline-to-Online Reinforcement Learning for Adroit Pen Reorientation"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = {text = "Apache-2.0"}
+dependencies = [
+  "gymnasium==0.29.1",
+  "gymnasium-robotics==1.2.3",
+  "minari[hf]==0.5.3",
+  "mujoco==2.3.7",
+  "torch==2.8.0",
+  "numpy==1.26.4",
+  "h5py==3.14.0",
+  "opencv-python-headless==4.11.0.86",
+  "PyYAML==6.0.3",
+  "pandas==2.3.2",
+  "matplotlib==3.10.5",
+  "imageio==2.37.4",
+  "imageio-ffmpeg==0.6.0",
+  "scipy==1.16.1",
+  "tqdm==4.67.1",
+  "tensorboard==2.20.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.1"]
+
+[project.urls]
+Repository = "https://github.com/Ricardo-ming1/adroit-pen-visual-rl"
+
+[tool.setuptools.packages.find]
+include = ["src*", "scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]

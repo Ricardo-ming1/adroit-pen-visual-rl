@@ -1,0 +1,19 @@
+{
+  "development_seed": 101,
+  "frozen_awac": {
+    "benchmark_success": 0.64,
+    "strict_stable_success": 0.4
+  },
+  "rescue_selected_by_validation": "residual_scale=0.1",
+  "residual_sac_promotion_passed": false,
+  "promotion_reasons": [
+    "no nonzero checkpoint met the E0 strict-minus-2pp selection floor",
+    "best nonzero checkpoint did not improve benchmark by 5 percentage points",
+    "default scale 0.2 showed persistent action saturation and Q-scale drift"
+  ],
+  "selected_checkpoint": "runs/v2/residual_sac_rescue/scale_0p1_seed_101/best_residual_sac_validation.pt",
+  "selected_online_steps": 0,
+  "paired_three_seed_status": "not_run_after_development_failure",
+  "hold_curriculum_status": "not_run_after_residual_sac_failed_promotion",
+  "frozen_five_seed_test_status": "not_run_without_a_promoted_candidate"
+}

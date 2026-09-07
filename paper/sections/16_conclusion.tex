@@ -1,0 +1,11 @@
+\hypertarget{ux7ed3ux8bba}{%
+\section{结论}\label{ux7ed3ux8bba}}
+
+\hypertarget{ux6700ux7ec8ux7ed3ux8bba}{%
+\subsection{最终结论}\label{ux6700ux7ec8ux7ed3ux8bba}}
+
+本项目从可验证的数据基础出发，以 25 条 human demonstrations 建立 Visual BC 与 offline AWAC，再通过 RGB 干预确认视觉内容和目标外观的因果作用。PPO、Residual SAC、Safe Residual、counterfactual branch 和 candidate ranker 的受控负结果逐步排除了``更小动作''``更强 anchor''或``真实分支标签''就能解决交接的简单解释。它们共同表明，在接触敏感闭环中，从部分可观测视觉历史预测局部动作的长时 gain/harm，远比直接回归当前隐藏物理状态困难。
+
+Temporal Visual-State Distillation 由此把问题改写为稠密的时序状态辨识：8-step RGB、proprioception 和 executed-action history 经过 CNN/GRU 预测 primitive hidden state，经确定性 adapter 和 Frozen Oracle AWAC 形成连续 controller。privileged state 和 Oracle action只在训练 loss 中出现，部署时没有 simulator truth。只解冻 estimator 最后一个 CNN block 是从 E1 到 E2 的关键组件。
+
+固定 E2 在独立 300-episode paired confirmation 上把 Benchmark 从 52.3\% 提高到 68.3\%，Strict 从 27.0\% 提高到 37.0\%；三训练 seed 均值为 61\%±4.0pp Benchmark、35\%±6.24pp Strict。一次性 paired frozen test 的 Benchmark 从 54.5\% 提高到 75.0\%，Strict 从 26.0\% 到 33.5\%。前者有明确统计证据，后者在 frozen test 上仅为方向性提升。最终结论是：监督式时序视觉状态蒸馏显著改善了目标获取和总体闭环成功，但没有彻底解决长期 hold。

@@ -1,0 +1,58 @@
+project: Adroit Pen Reorientation V3 Safe Residual SAC
+line: vision
+data_config: configs/data.yaml
+base_run_template: runs/frozen/vision/full_seed_{seed}
+base_checkpoint: best_offline_awac_validation.pt
+run_root: runs/v3/safe_residual_sac
+device: cuda
+deterministic_torch: true
+residual_actor:
+  hidden_dims: [256, 256]
+  initial_log_std: -3.0
+  log_std_min: -3.0
+  log_std_max: -3.0
+critic:
+  hidden_dims: [256, 256]
+safe_residual:
+  rho: 0.05
+  temperature: 0.0001
+  learn_temperature: false
+  correction_budget: 0.03
+  lambda_anchor: 0.05
+  q_scale_ema_decay: 0.99
+sac:
+  online_steps: 30000
+  replay_capacity: 1000000
+  offline_fraction: 0.5
+  batch_size: 256
+  gamma: 0.99
+  tau: 0.005
+  actor_lr: 0.00003
+  critic_lr: 0.0003
+  utd_ratio: 1
+  critic_warmup_steps: 10000
+  rho_ramp_steps: 5000
+  policy_update_interval: 2
+  reward_scale: 0.02
+  checkpoint_interval: 10000
+  log_interval: 1000
+diagnostics:
+  boundary_threshold: 0.95
+safety_thresholds:
+  performance_tolerance: 0.02
+  goal_entry_tolerance: 0.02
+  correction_rms_max: 0.04
+  z_extreme_rate_max: 0.01
+  residual_added_boundary_rate_max: 0.005
+  q_reasonable_scale_factor: 2.0
+evaluation:
+  steps: [0, 10000, 20000, 30000]
+validation_seeds:
+  start: 30000
+  count: 100
+confirmation_seeds:
+  start: 80000
+  count: 200
+online_seeds:
+  start: 3000000
+  per_training_seed_stride: 10000

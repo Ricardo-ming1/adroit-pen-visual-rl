@@ -1,0 +1,26 @@
+{
+  "anchor_rescue_allowed": false,
+  "candidate_checkpoint": "runs/v3/safe_residual_sac/anchor_0p05_seed_101/last_safe_residual_sac.pt",
+  "candidate_online_steps": 30000,
+  "continued_to_100k": false,
+  "development_seed": 101,
+  "frozen_test": "not_run_without_a_promoted_candidate",
+  "hold_curriculum": "not_run_after_30k_gate_failure",
+  "paired_confirmation_200_episodes": "not_run_after_30k_gate_failure",
+  "performance_improved": false,
+  "pilot_failures": [
+    "benchmark",
+    "strict",
+    "goal_entry"
+  ],
+  "pilot_final_steps": 30000,
+  "pilot_passed": false,
+  "selected_checkpoint": "runs/v3/safe_residual_sac/anchor_0p05_seed_101/best_safe_residual_validation.pt",
+  "selected_online_steps": 0,
+  "three_seed_handoff": "not_run_after_30k_gate_failure",
+  "validation_episode_count": 100,
+  "validation_episode_seeds": [
+    30000,
+    30099
+  ]
+}

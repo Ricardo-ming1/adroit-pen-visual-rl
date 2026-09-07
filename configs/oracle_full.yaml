@@ -1,0 +1,60 @@
+project: Adroit Pen Reorientation
+line: oracle
+data_config: configs/data.yaml
+run_root: runs/development/oracle_exactkl
+device: cuda
+deterministic_torch: true
+seed: 0
+actor:
+  hidden_dims: [256, 256]
+  log_std_min: -5.0
+  log_std_max: 1.0
+bc:
+  epochs: 120
+  batch_size: 256
+  actor_lr: 3.0e-4
+  gradient_clip: 10.0
+  eval_interval: 10
+  validation_episodes: 20
+critic:
+  updates: 20000
+  critic_lr: 3.0e-4
+  gamma: 0.99
+  tau: 0.005
+  batch_size: 256
+  reward_scale: 0.02
+  log_interval: 250
+awac:
+  updates: 15000
+  actor_lr: 3.0e-4
+  critic_lr: 3.0e-4
+  gamma: 0.99
+  tau: 0.005
+  batch_size: 256
+  reward_scale: 0.02
+  lambda: 1.0
+  max_advantage_weight: 20.0
+  actor_objective: weighted_mse
+  policy_samples: 4
+  eval_interval: 1000
+  validation_episodes: 20
+ppo:
+  rollout_steps: 2048
+  num_rollouts: 5
+  ppo_epochs: 5
+  minibatch_size: 256
+  actor_lr: 1.0e-5
+  value_lr: 3.0e-4
+  clip_ratio: 0.1
+  gamma: 0.99
+  gae_lambda: 0.95
+  entropy_coef: 0.0005
+  value_coef: 0.5
+  target_old_policy_kl: 0.01
+  reference_kl_coef: 0.5
+  bc_aux_coef: 0.1
+  max_grad_norm: 0.5
+  validation_episodes: 50
+validation_seeds:
+  start: 10000
+  count: 50

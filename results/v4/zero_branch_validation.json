@@ -1,0 +1,16 @@
+{
+  "action_max_abs": 0.0,
+  "continuation_steps_checked": 1200,
+  "initial_previous_action_max_abs": 0.0,
+  "initial_privileged_max_abs": 0.02152884006500244,
+  "initial_proprio_max_abs": 0.0,
+  "initial_rgb_max_abs": 0.0,
+  "mismatch_count": 0,
+  "next_previous_action_max_abs": 0.0,
+  "next_privileged_max_abs": 0.0,
+  "next_proprio_max_abs": 9.094947017729282e-13,
+  "next_rgb_max_abs": 0.0,
+  "pass": true,
+  "reward_max_abs": 2.842170943040401e-14,
+  "roots_checked": 240
+}

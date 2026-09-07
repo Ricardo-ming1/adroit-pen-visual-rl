@@ -1,0 +1,3 @@
+method,episodes,benchmark_success,strict_stable_success,goal_entry_rate,goal_exit_after_entry_rate
+Frozen Vision AWAC,100,0.62,0.34,0.62,0.5967741935483871
+Oracle AWAC,100,0.75,0.42,0.75,0.5333333333333333

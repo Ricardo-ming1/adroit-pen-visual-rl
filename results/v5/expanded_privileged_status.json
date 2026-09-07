@@ -1,0 +1,7 @@
+{
+  "dev_records": 4233,
+  "next_stage": "oracle_chunk_proposer",
+  "privileged_pass": false,
+  "roots": 1200,
+  "train_records": 16167
+}

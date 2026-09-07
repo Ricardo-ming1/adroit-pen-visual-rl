@@ -1,0 +1,29 @@
+project: V6 Temporal Visual State Distillation to Frozen Oracle AWAC
+seed: 606
+device: cuda:0
+sequence_length: 8
+vision_checkpoint: runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt
+oracle_checkpoint: runs/development/oracle_weighted_awac/full_seed_0/best_offline_awac_validation.pt
+v5_ranker_checkpoint: runs/v5/candidate_ranker/best_oracle_chunk_augmented_privileged_ranker.pt
+v5_run_dir: runs/v5/candidate_ranker
+run_dir: runs/v6
+results_dir: results/v6
+validation_seeds: {start: 30000, count: 100}
+source_data:
+  v4_seed_start: 5000000
+  v4_episodes: 244
+  oracle_seed_start: 6100000
+  oracle_episodes: 300
+training:
+  batch_size: 128
+  e1_epochs: 4
+  e2_epochs: 3
+  dagger_epochs: 3
+  learning_rate: 0.0003
+  cnn_learning_rate: 0.00003
+  action_loss_coefficient: 1.0
+dagger:
+  episodes: 300
+  d1_seed_start: 6200000
+  d2_seed_start: 6300000
+  targeted_fraction: 0.30

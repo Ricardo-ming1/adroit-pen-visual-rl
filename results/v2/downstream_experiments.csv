@@ -1,0 +1,5 @@
+method,status,reason
+Residual SAC E1 paired validation,not_run,development seed failed promotion after both allowed rescue pilots
+H0 normal continuation,not_run,Residual SAC did not pass the prerequisite
+H1 hold curriculum,not_run,Residual SAC did not pass the prerequisite
+5-seed frozen test,not_run,no promoted candidate was frozen

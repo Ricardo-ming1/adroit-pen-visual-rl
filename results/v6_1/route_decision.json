@@ -1,0 +1,10 @@
+{
+  "acquisition_without_strict_improvement_pattern": false,
+  "benchmark_difference": 0.16000000000000003,
+  "decision_frozen_before_reproduction": true,
+  "fixed_root_oracle_hold_gap_triggered": true,
+  "phase_a_confirmation_pass": true,
+  "phase_b_rescue_authorized": false,
+  "selected_route": "SKIP_RESCUE_REPRODUCE_FROZEN_E2_THREE_SEEDS",
+  "strict_difference": 0.09999999999999998
+}

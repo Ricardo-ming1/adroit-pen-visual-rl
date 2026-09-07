@@ -1,0 +1,13 @@
+\hypertarget{offline-to-online-ppo-ux4ea4ux63a5ux4e3aux4f55ux9000ux5316}{%
+\section{Offline-to-online PPO 交接为何退化}\label{offline-to-online-ppo-ux4ea4ux63a5ux4e3aux4f55ux9000ux5316}}
+
+\hypertarget{ux521dux59cb-ppo-handoff-ux6ca1ux6709ux5efaux7acbux7a33ux5b9aux6536ux76ca}{%
+\subsection{初始 PPO handoff 没有建立稳定收益}\label{ux521dux59cb-ppo-handoff-ux6ca1ux6709ux5efaux7acbux7a33ux5b9aux6536ux76ca}}
+
+PPO clipped surrogate 本来希望使用 on-policy rollout 修正离线策略，同时由 frozen AWAC reference KL 和 demonstration BC auxiliary 限制漂移。实现明确区分 \texttt{pi\_old}（本轮 rollout 策略）与 \texttt{pi\_ref}（冻结离线策略），并建立独立 value network；方法层面不存在把 AWAC Q 直接当 PPO V 的混用。尽管如此，多数 seed 的 validation 最优 checkpoint 出现在 0 online steps 或中期，后期性能常退化，anchor 也没有稳定优于 no-anchor。
+
+这说明问题不是``少一个正则项''就能解决。PPO 每次更新都会改变完整视觉 actor；在接触敏感任务中，局部 action likelihood 的小幅变化可能改变整个 episode 的手物接触轨迹。离线策略已位于一个可工作的窄闭环分布，在线样本有限时，新的 value/advantage 信号并不足以可靠保护它。
+
+\textbf{本章结论。} Offline AWAC 将视觉基线从 BC 的 37.3\% / 14.7\% 提高到 51.0\% / 20.3\%，而 PPO handoff 没有形成稳定额外收益。RGB 干预证明策略确实依赖图像内容，但 temporal shuffle 不退化明确暴露了动态表征不足；这个观察最终比继续扩大在线 actor 更新更有价值。
+
+\autocite{schulman2017ppo}

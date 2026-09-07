@@ -1,0 +1,31 @@
+\hypertarget{ux5c40ux9650ux6027ux4e0eux53efux6269ux5c55ux65b9ux5411}{%
+\section{局限性与可扩展方向}\label{ux5c40ux9650ux6027ux4e0eux53efux6269ux5c55ux65b9ux5411}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{纯仿真。} 所有数据、branch、confirmation 和 frozen test 都来自 MuJoCo \texttt{AdroitHandPen-v1}。项目没有 sim-to-real、真实相机标定、硬件延迟、关节跟踪误差、真实摩擦变化或安全停机实验。
+\item
+  \textbf{单相机与单任务。} 输入来自固定单相机、固定 84×84 视角；只研究 Adroit Pen reorientation 的一个环境和一个物体，没有多相机、相机位姿扰动、其他物体或跨任务泛化。
+\item
+  \textbf{最终训练不止 25 条示范。} 25 条 human demo 和 4,975 transitions 只训练基础 AWAC；E2 还使用 544 条 simulation episodes、108,800 个稠密 privileged labels。虽然部署不读取 simulator state，但训练显著依赖仿真监督。
+\item
+  \textbf{Oracle 依赖。} 最终策略借助 Frozen Oracle AWAC 作为可微 controller 和 action teacher。若任务没有可用 privileged Oracle，或者 Oracle 本身很弱，这条路线需要先解决 teacher 质量问题。
+\item
+  \textbf{训练 seed 方差。} 三个 recipe seed 的 Benchmark 为 57\%--65\%，Strict 为 28\%--40\%；Strict sample std 6.24pp。结果方向可复现，但不能称为高度稳定，更不能说每个 seed 都达到 frozen-test 的 75\%。
+\item
+  \textbf{长期 hold 仍弱。} 共同 first-entry roots 上，E2 的 50-step survival 为 47\%，方向性低于 E0 的 50\% 和 Oracle 的 53\%。当前结果没有证明长期保持问题已经解决。
+\item
+  \textbf{frozen Strict 证据有限。} frozen test Strict 从 26.0\% 到 33.5\%，paired CI \texttt{{[}0,+15{]}pp}，下界触及 0，不能单独称为显著提升。最终最强统计结论是 frozen Benchmark 和 300-episode confirmation 的两项指标。
+\item
+  \textbf{无统一 SOTA 比较。} 项目没有在相同视觉输入、demo 数、仿真监督量、seed bank 与 success 定义下重跑其他公开方法，因而不主张 state of the art。
+\item
+  \textbf{有限统计层级。} confirmation 有 300 个独立 episode，frozen test 有 200 个；3-seed 复现共享同一 100 states，不是 300 个独立 initial states。训练 seed 只有三个，无法精确刻画训练配方的尾部风险。
+\item
+  \textbf{不是普适 VLA。} E2 是针对单任务连续控制的视觉状态估计器加 Frozen Oracle controller，不含语言输入、跨任务预训练或开放世界泛化；不能将其描述为通用 vision-language-action model。
+\end{enumerate}
+
+这些限制不会否定已观测到的 paired simulation improvement，但决定了结论的外延：本项目证明的是一条在固定 Adroit Pen 仿真协议内可复现的视觉控制改进路线，不是对真实灵巧操作的完整解决方案。
+
+\textbf{本章结论。} 最终方法依赖仿真真值监督和 Frozen Oracle，且长期 hold 与训练方差仍有明显空间。任何 GitHub、简历或面试表述都必须同时说明纯仿真、无 sim-to-real、非 SOTA 和 frozen Strict 仅方向性提升。

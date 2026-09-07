@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this implementation, cite this repository and the upstream Adroit and DAPG work."
+title: "Visual Offline-to-Online Reinforcement Learning for Adroit Pen Reorientation"
+version: "0.1.0"
+type: software
+authors:
+  - family-names: "ricardo"
+repository-code: "https://github.com/Ricardo-ming1/adroit-pen-visual-rl"
+license: "Apache-2.0"

@@ -1,0 +1,29 @@
+\hypertarget{ux9879ux76eeux80ccux666fux4e0eux7814ux7a76ux95eeux9898}{%
+\section{项目背景与研究问题}\label{ux9879ux76eeux80ccux666fux4e0eux7814ux7a76ux95eeux9898}}
+
+Adroit Pen Reorientation 要求一只 24 自由度灵巧手在有限 horizon 内调整笔的三维姿态，使其与环境给出的目标姿态一致。它不是连续 360° 转笔，也不是只靠末端位置对齐即可完成的抓取任务。手指与笔之间存在多点接触、摩擦、碰撞和约束切换；一个瞬时看似无害的关节动作可能改变接触模式，并在几十步后放大为掉落或退出目标区域。因此，策略既要获得目标，又要在 episode 尾段稳定保持。
+
+视觉版本进一步引入三类困难。第一，单相机 RGB 只提供投影，笔的自转、遮挡部分和角速度不能在单帧中被直接观测，问题具有部分可观测性（partial observability）。第二，标准 human 数据只有 25 条轨迹，足以提供动作先验，却不足以覆盖闭环中的各种偏离状态。第三，offline-to-online 切换非常脆弱：已经能工作的离线 actor 周围并不一定存在由 bootstrapped critic 正确排序的局部改进方向。视觉误差、Q 误差和接触动力学可以共同把很小的策略更新放大为闭环退化。
+
+本项目围绕四个具体问题展开：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{D4RL/pen/human-v2} 能否在固定环境版本下恢复为不跨 episode、动力学一致的合法 transition？
+\item
+  视觉 actor 是否真的使用 RGB，还是仅依赖手部 proprioception 和历史动作形成捷径？
+\item
+  为什么 PPO、Residual SAC 和局部反事实动作修正会破坏已有闭环，而不是稳定提高它？
+\item
+  如果稀疏长时收益难以预测，能否改用稠密的 privileged state 与 Oracle action 监督，直接学习时序视觉状态重建？
+\end{enumerate}
+
+围绕这些问题，本项目完成了三项主要工作。其一，固定 Gymnasium-Robotics、Minari 和 MuJoCo 版本，验证状态恢复、一步 replay、episode 分割与 RGB 重建。其二，用视觉干预和一系列受控负结果定位 offline-to-online 交接的真实瓶颈：动作级 gain/harm 判断接近一个困难的长时 action-value 问题。其三，实现 Temporal Visual-State Distillation，并用独立 300-episode paired confirmation、3 个训练 recipe seed 和一次性 frozen test 划清可复现收益与统计边界。
+
+这不是``只用 25 条示范得到 75\% 成功率''的故事。25 条示范训练了离线 AWAC 基础控制器；最终 E2 还使用了 544 条仿真轨迹和 108,800 个稠密时序样本，以仿真真值和 Frozen Oracle action 作为训练监督。privileged 信息不进入部署输入，最终提升主要来自监督式时序状态蒸馏，而不是 online RL。
+
+\textbf{本章结论。} 视觉灵巧操作的核心矛盾不是单一算法选择，而是少量离线示范、部分可观测性与接触敏感闭环之间的共同作用。后续实验始终把``数据是否可信''``视觉是否有因果作用''和``改进是否在未见 bank 上成立''分开回答。
+
+\autocite{rajeswaran2017learning,fu2020d4rl}

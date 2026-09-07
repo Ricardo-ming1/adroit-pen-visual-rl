@@ -1,0 +1,81 @@
+{
+  "action_dim": 24,
+  "action_scaling": "Gymnasium normalized [-1,1] mapped once by AdroitHandPenEnv",
+  "camera": {
+    "azimuth": -45.0,
+    "camera_id": -1,
+    "distance": 1.0,
+    "elevation": -25.0,
+    "lookat": [
+      0.0,
+      -0.2,
+      0.22
+    ]
+  },
+  "checks": {
+    "cross_episode_transitions": 0,
+    "next_rgb_exact_by_episode_storage": true,
+    "restored_observation_max_abs_error": 5.551115123125783e-16,
+    "restored_observation_samples": 100,
+    "sequential_replay_observation_max_abs_error": 0.022654096829302167,
+    "sequential_replay_reward_max_abs_error": 1.1368683772161603e-12,
+    "step_qpos_max_abs_error": 1.1657341758564144e-15,
+    "step_qvel_max_abs_error": 3.1175062531474396e-13,
+    "step_reward_max_abs_error": 7.105427357601002e-15,
+    "step_samples": 32
+  },
+  "container_observations_including_replayed_final": 5025,
+  "dataset_id": "D4RL/pen/human-v2",
+  "environment_id": "AdroitHandPen-v1",
+  "environment_xml": "gymnasium_robotics/envs/assets/adroit_hand/adroit_pen.xml",
+  "episodes": 25,
+  "image_size": [
+    84,
+    84
+  ],
+  "nominal_horizon": 200,
+  "passed": true,
+  "renderer": "mujoco-egl",
+  "reward_type": "dense",
+  "source_states": 5000,
+  "train_episode_ids": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23,
+    24
+  ],
+  "valid_intra_episode_transitions": 4975,
+  "validation_episode_ids": [
+    3,
+    5,
+    13,
+    14,
+    22
+  ],
+  "versions": {
+    "cuda": "12.8",
+    "gymnasium": "0.29.1",
+    "gymnasium_robotics": "1.2.3",
+    "minari": "0.5.3",
+    "mujoco": "2.3.7",
+    "numpy": "1.26.4",
+    "python": "3.11.15",
+    "torch": "2.8.0+cu128"
+  }
+}

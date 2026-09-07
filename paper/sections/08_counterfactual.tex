@@ -1,0 +1,20 @@
+\hypertarget{counterfactual-branch-ux4e0e-candidate-ranker}{%
+\section{Counterfactual branch 与 candidate ranker}\label{counterfactual-branch-ux4e0e-candidate-ranker}}
+
+\hypertarget{ux771fux5b9e-branch-outcome-ux6709-headroomux4f46ux4e0dux7b49ux4e8eux53efux90e8ux7f72}{%
+\subsection{真实 branch outcome 有 headroom，但不等于可部署}\label{ux771fux5b9e-branch-outcome-ux6709-headroomux4f46ux4e0dux7b49ux4e8eux53efux90e8ux7f72}}
+
+V4 不再用 bootstrapped Q 生成动作标签，而是从 Frozen Vision AWAC trajectory 恢复完整 simulator state、elapsed step、frame stack 与动作历史，在同一 root 上运行 zero branch 和多个局部候选。240 个 root 中有 52 个存在明确事件改善：far/pre-goal 8/60，near-goal 6/60，pending-exit 29/60，stable-hold 9/60；总 positive-root rate 为 21.7\%，pending-exit 高达 48.3\%。这证明局部 correction 的动作空间 headroom 客观存在，尤其是在刚进入目标又即将退出的状态。
+
+但部署需要在只看视觉历史时决定``是否介入''和``介入哪个候选''。V4 的 gate 在 branch-dev 上即使把 coverage 放到 50\%，intervention precision 也只有 30.8\%，false-positive rate 为 43.9\%；没有 threshold 能同时满足 precision \(\geq\)80\%、FPR \(\leq\)5\%、coverage \(\geq\)5\%。正样本 residual regression 的 dev RMSE 为 0.424，甚至与预测零 residual 的 0.434 很接近。问题不是没有 winner，而是稀少、相似的视觉状态映射到多模态的 24D winner，单一回归会平均掉关键结构。
+
+V5 因此补齐 common-horizon completion，并把标签改为每个 \texttt{(root,candidate)} 的 strong gain、harm 与 progress，而非单一 winner。最初 240 roots ×17 candidates 产生 4,080 records；定向扩充后为 1,200 roots ×17，即 20,400 records 和 2,413,490 branch transitions，共 178 个 strong-gain roots。固定候选 bank 的事后上界确实存在：Benchmark 可从 84.75\% 到 86.33\%，Strict 从 35.25\% 到 46.67\%，可避免 22 次 exit。
+
+然而，即使 privileged ranker 直接看到 simulator state，部署式 selector 的 precision 仍只有 21.1\%，harm 10.5\%；加入 5-step Oracle/visual proposal 后 precision 28.9\%、harm 11.1\%，都远达不到安全介入门槛。这个结果很重要：瓶颈不应简单归因于 CNN 不够大，因为 privileged selector 也无法在当前数据和候选协议下稳定排序。
+
+\hypertarget{ux4e3aux4ec0ux4e48-oracle-takeover-ux4e5fux53efux80fdux6709ux5bb3}{%
+\subsection{为什么 Oracle takeover 也可能有害}\label{ux4e3aux4ec0ux4e48-oracle-takeover-ux4e5fux53efux80fdux6709ux5bb3}}
+
+完整 Oracle AWAC 使用真值 observation，整体闭环通常强于 Vision AWAC；但把 Oracle 的 5-step action chunk 插入 Vision controller，并不等价于执行完整 Oracle policy。Oracle 动作是在自己的 closed-loop observation 和动作历史下形成的；五步后切回 Vision AWAC 时，后者收到的是一个由另一个 controller 造成的新状态。即使局部几步朝目标移动，接触相位、手指载荷或视觉历史都可能落到 Vision actor 的 off-manifold 区域。
+
+V5 的 1,200 roots 中，5-step Oracle takeover 产生 205 个 gain，同时产生 223 个 harm。完整 Oracle 更强与短时 Oracle stitching 不稳定并不矛盾：前者比较完整闭环，后者比较控制器切换。它说明不能无条件模仿 Oracle chunk，更不能把``teacher action 更接近最优''直接当成局部标签。

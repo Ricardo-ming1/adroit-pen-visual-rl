@@ -1,0 +1,41 @@
+{
+  "common_horizon_candidate_data_complete": true,
+  "confirmation_run": false,
+  "dagger_rounds_run": 0,
+  "data_expansion_performed": true,
+  "expanded_roots": 1200,
+  "final_selector": {
+    "coverage": 0.18072289156626506,
+    "harm_rate": 0.1111111111111111,
+    "passes_constraints": false,
+    "precision": 0.28888888888888886,
+    "selected_benchmark_rate": 0.8835341365461847,
+    "selected_goal_exit_rate": 0.5622489959839357,
+    "selected_strict_rate": 0.40160642570281124
+  },
+  "fixed_branch_transitions": 2413490,
+  "fixed_candidate_records": 20400,
+  "frozen_test_run": false,
+  "initial_roots": 240,
+  "oracle_chunk_fallback_performed": true,
+  "paired_closed_loop_validation_run": false,
+  "representation_rescue_performed": false,
+  "same_bank_frozen_vision_awac": {
+    "benchmark": 0.62,
+    "goal_exit_after_entry": 0.597,
+    "seeds": [
+      30000,
+      30099
+    ],
+    "strict": 0.34
+  },
+  "same_bank_oracle_awac": {
+    "benchmark": 0.75,
+    "strict": 0.42
+  },
+  "selected_deployable_checkpoint": "runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt",
+  "stage": "V5 candidate-conditioned conservative refinement",
+  "stop_reason": "Even the Oracle-chunk-augmented privileged selector had 28.9% precision and 11.1% harm.",
+  "three_seed_run": false,
+  "v5_checkpoint_status": "diagnostic only; no selector met deployment constraints"
+}

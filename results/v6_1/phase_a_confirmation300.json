@@ -1,0 +1,95 @@
+{
+  "acquisition_criterion_pass": true,
+  "benchmark_difference": 0.16000000000000003,
+  "controller_switching_used": false,
+  "e2_checkpoint": "runs/v6/checkpoints/e2.pt",
+  "e2_checkpoint_sha256": "cc35a4130cb33df92fb635e58f125a219da76a2a89fd4109ba7e9267a3080b22",
+  "episodes": 300,
+  "paired_e2_vs_e0": {
+    "benchmark": {
+      "discordant_pairs": 84,
+      "exact_mcnemar_two_sided_p": 1.3328736909323258e-07,
+      "losses": 18,
+      "paired_bootstrap_95_ci": [
+        0.10333333333333333,
+        0.21666666666666667
+      ],
+      "paired_difference": 0.16,
+      "ties": 216,
+      "wins": 66
+    },
+    "strict": {
+      "discordant_pairs": 90,
+      "exact_mcnemar_two_sided_p": 0.0020602656809630745,
+      "losses": 30,
+      "paired_bootstrap_95_ci": [
+        0.04,
+        0.16
+      ],
+      "paired_difference": 0.1,
+      "ties": 210,
+      "wins": 60
+    }
+  },
+  "phase_a_confirmation_pass": true,
+  "policies": {
+    "e0": {
+      "benchmark_success": 0.5233333333333333,
+      "benchmark_success_count": 157,
+      "drop_count": 7,
+      "episode_count": 300,
+      "goal_entry_count": 157,
+      "goal_entry_rate": 0.5233333333333333,
+      "goal_exit_after_entry_rate": 0.5923566878980892,
+      "goal_exit_count": 93,
+      "mean_max_consecutive_goal_steps": 50.08,
+      "nonfinite_count": 0,
+      "policy": "Frozen Vision AWAC",
+      "strict_stable_success": 0.27,
+      "strict_success_count": 81,
+      "twenty_step_hold_count": 118,
+      "twenty_step_hold_rate": 0.3933333333333333
+    },
+    "e2": {
+      "benchmark_success": 0.6833333333333333,
+      "benchmark_success_count": 205,
+      "drop_count": 8,
+      "episode_count": 300,
+      "goal_entry_count": 205,
+      "goal_entry_rate": 0.6833333333333333,
+      "goal_exit_after_entry_rate": 0.5853658536585366,
+      "goal_exit_count": 120,
+      "mean_max_consecutive_goal_steps": 69.11333333333333,
+      "nonfinite_count": 0,
+      "policy": "Frozen E2",
+      "strict_stable_success": 0.37,
+      "strict_success_count": 111,
+      "twenty_step_hold_count": 170,
+      "twenty_step_hold_rate": 0.5666666666666667
+    },
+    "oracle": {
+      "benchmark_success": 0.6466666666666666,
+      "benchmark_success_count": 194,
+      "drop_count": 9,
+      "episode_count": 300,
+      "goal_entry_count": 194,
+      "goal_entry_rate": 0.6466666666666666,
+      "goal_exit_after_entry_rate": 0.5103092783505154,
+      "goal_exit_count": 99,
+      "mean_max_consecutive_goal_steps": 71.12666666666667,
+      "nonfinite_count": 0,
+      "policy": "True-state Frozen Oracle AWAC",
+      "strict_stable_success": 0.36333333333333334,
+      "strict_success_count": 109,
+      "twenty_step_hold_count": 169,
+      "twenty_step_hold_rate": 0.5633333333333334
+    }
+  },
+  "privileged_state_read_by_e2_policy": false,
+  "seed_end": 7000299,
+  "seed_start": 7000000,
+  "strict_criterion_pass": true,
+  "strict_difference": 0.09999999999999998,
+  "v6_formal_status_preserved": "STOP_V6_PROMOTION_GATE_NOT_MET",
+  "vision_warmup_used": false
+}

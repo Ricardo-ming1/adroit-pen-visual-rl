@@ -1,0 +1,30 @@
+{
+  "branch_transitions": 141970,
+  "by_root_type": {
+    "far_pre_goal_failure": {
+      "harm": 13,
+      "roots": 120,
+      "strong_gain": 10
+    },
+    "goal_entry_pending_exit": {
+      "harm": 127,
+      "roots": 600,
+      "strong_gain": 143
+    },
+    "near_goal": {
+      "harm": 43,
+      "roots": 180,
+      "strong_gain": 29
+    },
+    "stable_hold": {
+      "harm": 40,
+      "roots": 300,
+      "strong_gain": 23
+    }
+  },
+  "deployment_input": "none; labels only",
+  "harm_roots": 223,
+  "roots": 1200,
+  "strong_gain_roots": 205,
+  "teacher_candidate": "Oracle takeover 5 steps (training diagnostic only)"
+}

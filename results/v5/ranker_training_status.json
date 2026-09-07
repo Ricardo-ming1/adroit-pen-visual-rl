@@ -1,0 +1,8 @@
+{
+  "candidate_records": 4080,
+  "dev_records": 884,
+  "next_stage": "targeted_data_expansion_or_oracle_chunk",
+  "privileged_pass": false,
+  "train_records": 3196,
+  "visual_pass": false
+}

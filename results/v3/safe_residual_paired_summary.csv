@@ -1,0 +1,3 @@
+method,online_steps,benchmark_success,strict_stable_success,goal_entry_rate,goal_exit_after_entry_rate,consecutive_success_window_rate,correction_rms,correction_rms_max_dim,z_extreme_rate,base_boundary_rate,executed_action_boundary_rate,residual_added_boundary_rate,numerical_clamp_count,q_base_mean,mc_return_mean,q_bias_mean,q_mae
+Frozen Vision AWAC E0,0,0.62,0.34,0.62,0.5967741935483871,0.53,0.0,0.0,0.0,0.55326875,0.55326875,0.0,0,,,,
+Safe Residual SAC candidate,30000,0.59,0.23,0.59,0.6779661016949152,0.45,0.005097539146321097,0.010230566547515585,0.0,0.55185625,0.5500291666666667,0.0007145833333333333,0,62.15950975726284,22.078279150946294,40.081230606316545,47.07221455015043

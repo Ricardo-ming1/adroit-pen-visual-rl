@@ -1,0 +1,50 @@
+{
+  "common_root_count": 200,
+  "fifty_step_survival_mean": 0.515,
+  "same_state_and_history": true,
+  "seeds": [
+    {
+      "drop_count": 0,
+      "fifty_step_survival": 0.47,
+      "fifty_step_survival_count": 94,
+      "mean_max_goal_streak": 33.38,
+      "mean_steps_to_exit": 32.81,
+      "nonfinite_count": 0,
+      "recipe_seed": 606,
+      "roots": 200,
+      "strict_continuation": 0.615,
+      "strict_continuation_count": 123,
+      "twenty_step_survival": 0.615,
+      "twenty_step_survival_count": 123
+    },
+    {
+      "drop_count": 0,
+      "fifty_step_survival": 0.535,
+      "fifty_step_survival_count": 107,
+      "mean_max_goal_streak": 35.06,
+      "mean_steps_to_exit": 33.975,
+      "nonfinite_count": 0,
+      "recipe_seed": 1606,
+      "roots": 200,
+      "strict_continuation": 0.625,
+      "strict_continuation_count": 125,
+      "twenty_step_survival": 0.625,
+      "twenty_step_survival_count": 125
+    },
+    {
+      "drop_count": 0,
+      "fifty_step_survival": 0.54,
+      "fifty_step_survival_count": 108,
+      "mean_max_goal_streak": 35.765,
+      "mean_steps_to_exit": 34.995,
+      "nonfinite_count": 0,
+      "recipe_seed": 2606,
+      "roots": 200,
+      "strict_continuation": 0.645,
+      "strict_continuation_count": 129,
+      "twenty_step_survival": 0.645,
+      "twenty_step_survival_count": 129
+    }
+  ],
+  "twenty_step_survival_mean": 0.6283333333333333
+}

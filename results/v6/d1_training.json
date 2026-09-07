@@ -1,0 +1,51 @@
+{
+  "best_dev_loss": 1.3015326380410754,
+  "checkpoint": "runs/v6/checkpoints/d1.pt",
+  "curve": [
+    {
+      "dev_action": 0.8213838048873552,
+      "dev_auxiliary": 0.5948553751934623,
+      "dev_geodesic": 0.43721925487509705,
+      "dev_state": 0.3611777377456421,
+      "dev_state_low": 0.13876633479918202,
+      "dev_total": 1.3015326380410754,
+      "epoch": 1,
+      "train_total": 0.29503874250134193
+    },
+    {
+      "dev_action": 0.9394088590887086,
+      "dev_auxiliary": 0.6349277607470812,
+      "dev_geodesic": 0.435667782063313,
+      "dev_state": 0.3630840761171802,
+      "dev_state_low": 0.14138631216784422,
+      "dev_total": 1.4294784657431399,
+      "epoch": 2,
+      "train_total": 0.21339596404908381
+    },
+    {
+      "dev_action": 0.8334860223817291,
+      "dev_auxiliary": 0.6662057105205911,
+      "dev_geodesic": 0.4283888078778695,
+      "dev_state": 0.35641873110536987,
+      "dev_state_low": 0.13842921248822385,
+      "dev_total": 1.3231459073270404,
+      "epoch": 3,
+      "train_total": 0.18225333562559207
+    }
+  ],
+  "epochs": 3,
+  "historical_rows": 98800,
+  "minibatch_recipe": "50% latest DAgger / 50% historical sequence data",
+  "offline_diagnostics": {
+    "angular_velocity_rmse": 1.120266318321228,
+    "hidden_state_normalized_rmse": 1.0394963026046753,
+    "object_orientation_geodesic_deg": 19.84207534790039,
+    "oracle_action_rmse": 0.11847034841775894,
+    "oracle_action_rmse_p95": 0.19539134204387665,
+    "samples": 16073,
+    "target_orientation_geodesic_deg": 5.208743572235107
+  },
+  "recent_rows": 49267,
+  "stage": "d1",
+  "updates": 2307
+}

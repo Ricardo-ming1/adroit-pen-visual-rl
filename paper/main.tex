@@ -1,0 +1,78 @@
+% !TeX program = xelatex
+\documentclass[UTF8,a4paper,11pt,fontset=fandol]{ctexart}
+
+\usepackage[left=2.35cm,right=2.35cm,top=2.45cm,bottom=2.45cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,multirow,threeparttable,tabularx,longtable,array}
+\usepackage{calc}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{caption,subcaption,float}
+\usepackage{fvextra}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage[backend=biber,style=numeric,sorting=none,maxbibnames=8]{biblatex}
+\addbibresource{references.bib}
+\usepackage{xurl}
+\usepackage[hidelinks,unicode,pdfencoding=auto]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\graphicspath{{figures/}}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep,leftmargin=2em}
+\captionsetup{font=small,labelfont=bf}
+\sisetup{detect-all}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\definecolor{deepblue}{HTML}{24527A}
+\definecolor{softgreen}{HTML}{5B8C5A}
+\definecolor{warmorange}{HTML}{D17A22}
+\hypersetup{
+  pdftitle={从少量人类示范到时序视觉状态蒸馏：Adroit Pen 视觉灵巧操作的可复现实验研究},
+  pdfauthor={Adroit Pen Visual Offline-to-Online RL Project},
+  pdfsubject={视觉灵巧操作、离线强化学习与时序状态蒸馏},
+  pdfkeywords={Adroit Pen, AWAC, visual control, state distillation, GRU}
+}
+
+\title{\bfseries 从少量人类示范到时序视觉状态蒸馏\\
+\large Adroit Pen 视觉灵巧操作的可复现实验研究}
+\author{Adroit Pen Visual Offline-to-Online RL Project}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{center}
+\small 纯仿真技术报告；无 sim-to-real 或真实硬件实验。
+\end{center}
+\tableofcontents
+\clearpage
+
+\input{sections/00_abstract}
+\input{sections/01_background}
+\input{sections/02_task_metrics}
+\input{sections/03_data_reconstruction}
+\input{sections/04_offline_baselines}
+\input{sections/05_visual_causality}
+\input{sections/06_ppo_handoff}
+\input{sections/07_residual_failures}
+\input{sections/08_counterfactual}
+\input{sections/09_method_shift}
+\input{sections/10_temporal_distillation}
+\input{sections/11_ablation}
+\input{sections/12_final_evaluation}
+\input{sections/13_lessons}
+\input{sections/14_limitations}
+\input{sections/15_reproduction}
+\input{sections/16_conclusion}
+\appendix
+\input{sections/90_appendices}
+
+\printbibliography[title={参考文献}]
+\end{document}

@@ -1,0 +1,6 @@
+experiment,benchmark,strict,goal_exit_after_entry,hold20,paired_wins,paired_losses,paired_ties
+e0_frozen_vision_validation100,0.62,0.34,0.5967741935483871,0.53,,,
+oracle_adapter_validation100,0.75,0.42,0.5333333333333333,,,,
+e1_validation100,0.65,0.22,0.7384615384615385,0.54,21,32,47
+e2_validation100,0.78,0.38,0.6282051282051282,0.56,33,19,48
+d1_validation100,0.66,0.31,0.5757575757575758,0.53,27,29,44

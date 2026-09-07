@@ -1,0 +1,60 @@
+{
+  "bank_seed_start": 50000,
+  "checkpoint_selection_or_retraining_after_test": false,
+  "e0": {
+    "benchmark_success": 0.545,
+    "benchmark_success_count": 109,
+    "drop_count": 2,
+    "episode_count": 200,
+    "goal_exit_after_entry_rate": "NOT_RECORDED_IN_HISTORICAL_FROZEN_BASELINE",
+    "nonfinite_count": 0,
+    "strict_stable_success": 0.26,
+    "strict_success_count": 52
+  },
+  "e2": {
+    "benchmark_success": 0.75,
+    "benchmark_success_count": 150,
+    "drop_count": 6,
+    "episode_count": 200,
+    "goal_entry_count": 150,
+    "goal_entry_rate": 0.75,
+    "goal_exit_after_entry_rate": 0.6466666666666666,
+    "goal_exit_count": 97,
+    "mean_max_consecutive_goal_steps": 66.84,
+    "nonfinite_count": 0,
+    "strict_stable_success": 0.335,
+    "strict_success_count": 67,
+    "twenty_step_hold_count": 117,
+    "twenty_step_hold_rate": 0.585
+  },
+  "episodes": 200,
+  "historical_e0_exit_metric_available": false,
+  "historical_e0_reused_without_rerun": true,
+  "opened_for_v6_1_model_selection": false,
+  "paired_e2_vs_e0": {
+    "benchmark": {
+      "discordant_pairs": 65,
+      "exact_mcnemar_two_sided_p": 2.7862343424643344e-07,
+      "losses": 12,
+      "paired_bootstrap_95_ci": [
+        0.13,
+        0.28
+      ],
+      "paired_difference": 0.205,
+      "ties": 135,
+      "wins": 53
+    },
+    "strict": {
+      "discordant_pairs": 61,
+      "exact_mcnemar_two_sided_p": 0.07217743850092258,
+      "losses": 23,
+      "paired_bootstrap_95_ci": [
+        0.0,
+        0.15
+      ],
+      "paired_difference": 0.075,
+      "ties": 139,
+      "wins": 38
+    }
+  }
+}

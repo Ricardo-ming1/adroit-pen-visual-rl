@@ -1,0 +1,63 @@
+project: Adroit Pen Reorientation V4 Counterfactual Refinement
+seed: 101
+device: cuda
+deterministic_torch: true
+data_config: configs/data.yaml
+vision_checkpoint: runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt
+oracle_checkpoint: runs/development/oracle_weighted_awac/full_seed_0/best_offline_awac_validation.pt
+safe_residual_candidate_checkpoint: runs/v3/safe_residual_sac/anchor_0p05_seed_101/last_safe_residual_sac.pt
+run_dir: runs/v4/counterfactual_pilot
+results_dir: results/v4
+
+validation_seeds:
+  start: 30000
+  count: 100
+confirmation_seeds:
+  start: 90000
+  count: 200
+
+roots:
+  training_seed_start: 5000000
+  maximum_source_episodes: 500
+  max_roots_per_trajectory: 2
+  minimum_remaining_steps: 30
+  zero_verify_steps: 5
+  exit_lookahead: 5
+  near_position_error: 0.12
+  near_orientation_similarity: 0.80
+  checkpoint_episode_interval: 20
+  dev_fraction: 0.20
+  split_seed: 431
+  quotas:
+    far_pre_goal_failure: 60
+    near_goal: 60
+    goal_entry_pending_exit: 60
+    stable_hold: 60
+
+branches:
+  rho: 0.05
+  gamma: 0.99
+  intervention_steps: 3
+  screen_steps: 30
+  completion_top_k: 3
+  checkpoint_root_interval: 5
+  transition_budget_max: 300000
+
+student:
+  hidden_size: 128
+  initial_gate_probability: 0.05
+  epochs: 100
+  batch_size: 128
+  learning_rate: 0.0003
+  residual_loss: huber
+  zero_loss_coef: 0.25
+  gate_precision_min: 0.80
+  false_positive_rate_max: 0.05
+  coverage_min: 0.05
+  thresholds: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90]
+
+dagger:
+  round1_episodes: 100
+  round1_max_roots: 400
+  round2_episodes: 100
+  round2_max_roots: 400

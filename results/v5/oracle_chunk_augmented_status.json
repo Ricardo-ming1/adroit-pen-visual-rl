@@ -1,0 +1,8 @@
+{
+  "candidate_records": 21600,
+  "next_stage": "stop_no_safe_selector",
+  "privileged_pass": false,
+  "roots": 1200,
+  "visual_pass": null,
+  "visual_trained": false
+}

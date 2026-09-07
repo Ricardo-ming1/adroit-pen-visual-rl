@@ -1,0 +1,98 @@
+{
+  "branch_pilot": {
+    "branch_transitions": 195403,
+    "by_root_type": {
+      "far_pre_goal_failure": {
+        "positive_root_rate": 0.13333333333333333,
+        "positive_roots": 8,
+        "roots": 60
+      },
+      "goal_entry_pending_exit": {
+        "positive_root_rate": 0.48333333333333334,
+        "positive_roots": 29,
+        "roots": 60
+      },
+      "near_goal": {
+        "positive_root_rate": 0.1,
+        "positive_roots": 6,
+        "roots": 60
+      },
+      "stable_hold": {
+        "positive_root_rate": 0.15,
+        "positive_roots": 9,
+        "roots": 60
+      }
+    },
+    "decision": "proceed_student",
+    "goal_entry_exit_positive_root_rate": 0.48333333333333334,
+    "local_candidates_including_zero_per_root": 14,
+    "overall_positive_root_rate": 0.21666666666666667,
+    "overall_positive_roots": 52,
+    "positive_winner_sources": {
+      "oracle_direction": 24,
+      "pca": 26,
+      "safe_residual": 2
+    },
+    "roots": 240,
+    "route_only_takeover_candidates_per_root": 2,
+    "takeover_screen_event_improvement_rate": {
+      "oracle_takeover_20": 0.275,
+      "oracle_takeover_5": 0.2
+    }
+  },
+  "event_improvement_counts": {
+    "benchmark": 7,
+    "goal_exit_avoided": 2,
+    "goal_steps": 51,
+    "max_goal_streak": 45,
+    "strict": 9
+  },
+  "phase": "counterfactual simulation-guided visual policy refinement",
+  "positive_correction_rms_max": 0.03258876937131087,
+  "positive_correction_rms_mean": 0.012780166766158518,
+  "positive_winner_sources": {
+    "oracle_direction": 24,
+    "pca": 26,
+    "safe_residual": 2
+  },
+  "roots": {
+    "complete": true,
+    "counts": {
+      "far_pre_goal_failure": 60,
+      "goal_entry_pending_exit": 60,
+      "near_goal": 60,
+      "stable_hold": 60
+    },
+    "dev_roots": 52,
+    "dev_source_episodes": 31,
+    "maximum_roots_per_source_trajectory": 2,
+    "quotas": {
+      "far_pre_goal_failure": 60,
+      "goal_entry_pending_exit": 60,
+      "near_goal": 60,
+      "stable_hold": 60
+    },
+    "refreshed_root_qpos_max_abs": 0.0,
+    "source_episodes_scanned": 244,
+    "source_rollout_transitions": 48800,
+    "train_roots": 188,
+    "train_source_episodes": 126,
+    "training_seed_start": 5000000
+  },
+  "student_branch_dev": {
+    "best_dev_total_loss": 0.7104805111885071,
+    "dev_positive_residual_rmse": 0.42369577288627625,
+    "dev_positive_roots": 11,
+    "dev_rmse_relative_to_zero": 0.9774839745352698,
+    "dev_roots": 52,
+    "dev_zero_predictor_rmse": 0.4334554672241211,
+    "gate_dev_pass": false,
+    "residual_fit_pass": false,
+    "selected_threshold": null,
+    "train_positive_residual_rmse": 0.42097094655036926,
+    "train_positive_roots": 41,
+    "train_rmse_relative_to_zero": 0.9220299665723168,
+    "train_roots": 188,
+    "train_zero_predictor_rmse": 0.45656970143318176
+  }
+}

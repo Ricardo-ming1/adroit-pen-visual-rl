@@ -1,0 +1,5 @@
+root_type,positive_root_rate,positive_roots,roots
+far_pre_goal_failure,0.13333333333333333,8,60
+goal_entry_pending_exit,0.48333333333333334,29,60
+near_goal,0.1,6,60
+stable_hold,0.15,9,60

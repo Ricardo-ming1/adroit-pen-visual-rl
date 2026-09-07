@@ -1,0 +1,6 @@
+experiment,episodes,benchmark,strict,goal_exit_after_entry,hold20,paired_wins,paired_losses,paired_ties,decision
+E0 Frozen Vision,100,0.62,0.34,0.596774,0.53,,,,baseline
+E-Oracle true-state adapter,100,0.75,0.42,0.533333,0.65,,,,adapter parity pass
+E1 frozen CNN,100,0.65,0.22,0.738462,0.54,21,32,47,fail strict and exit
+E2 last-block adaptation,100,0.78,0.38,0.628205,0.56,33,19,48,fail exit guard by 0.001431
+D1 state-estimation DAgger,100,0.66,0.31,0.575758,0.53,27,29,44,fail promotion metric

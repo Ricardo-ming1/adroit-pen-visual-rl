@@ -1,0 +1,4689 @@
+{
+  "baseline": {
+    "benchmark": 0.46,
+    "exit": 0.265,
+    "hold20": 0.32,
+    "strict": 0.245
+  },
+  "candidate_routing_route_closed": true,
+  "deployable_claim": false,
+  "episode_level_net_utility": 2,
+  "episodes": 200,
+  "interventions": 33,
+  "paired_gains": 4,
+  "paired_harms": 1,
+  "paired_neutral": 195,
+  "pilot": {
+    "benchmark": 0.46,
+    "exit": 0.265,
+    "hold20": 0.33,
+    "strict": 0.26
+  },
+  "rows": [
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 111,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 111,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.0022373718675225973,
+          "prob_harm": 0.013801210559904575,
+          "step": 14
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400000
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 187,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 187,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.9823310140054673e-06,
+          "prob_harm": 2.873583525797585e-06,
+          "step": 14
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400001
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400002
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 178,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 178,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.3305967172527744e-07,
+          "prob_harm": 1.726489529119135e-07,
+          "step": 23
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400003
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 6,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 6,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.9737618117687816e-07,
+          "prob_harm": 2.583742286788038e-07,
+          "step": 24
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400004
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400005
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 180,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 180,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.2468844090562925e-07,
+          "prob_harm": 7.666550772000846e-08,
+          "step": 21
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400006
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 3,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 3,
+        "selection": {
+          "candidate_id": 2,
+          "prob_gain": 0.9715754985809326,
+          "prob_harm": 0.18850013613700867,
+          "step": 15
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400007
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400008
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 156,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 156,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 3.117225560345105e-06,
+          "prob_harm": 5.962606337561738e-07,
+          "step": 45
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400009
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400010
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 184,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 184,
+        "selection": {
+          "candidate_id": 14,
+          "prob_gain": 0.9782550930976868,
+          "prob_harm": 0.13182060420513153,
+          "step": 17
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400011
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400012
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400013
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 181,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 181,
+        "selection": {
+          "candidate_id": 12,
+          "prob_gain": 0.9962499737739563,
+          "prob_harm": 0.01325247623026371,
+          "step": 20
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400014
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 10,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 10,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 7.783523869875353e-06,
+          "prob_harm": 2.633925760164857e-06,
+          "step": 34
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400015
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400016
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400017
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400018
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 181,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 181,
+        "selection": {
+          "candidate_id": 9,
+          "prob_gain": 0.990517795085907,
+          "prob_harm": 0.02770613692700863,
+          "step": 20
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400019
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 184,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 184,
+        "selection": {
+          "candidate_id": 12,
+          "prob_gain": 0.7886898517608643,
+          "prob_harm": 0.06395585834980011,
+          "step": 17
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400020
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400021
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400022
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400023
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400024
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 14,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 14,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 4.565366907627322e-05,
+          "prob_harm": 1.9390736269997433e-05,
+          "step": 33
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400025
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 13,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 13,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.851569140853826e-05,
+          "prob_harm": 5.2561474149115384e-05,
+          "step": 34
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400026
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 161,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 161,
+        "selection": {
+          "candidate_id": 3,
+          "prob_gain": 0.8403702974319458,
+          "prob_harm": 0.08534200489521027,
+          "step": 22
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400027
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400028
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 149,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 149,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 4.895375127489388e-07,
+          "prob_harm": 9.622051493352046e-07,
+          "step": 52
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400029
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.8131784429442632e-07,
+          "prob_harm": 4.890563900517009e-07,
+          "step": 52
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400030
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 187,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 187,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.2623180509763188e-06,
+          "prob_harm": 1.9378978777240263e-06,
+          "step": 14
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400031
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": {
+          "candidate_id": 3,
+          "prob_gain": 0.8713527321815491,
+          "prob_harm": 0.0007518399506807327,
+          "step": 24
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400032
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400033
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400034
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400035
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400036
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 96,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 95,
+        "selection": {
+          "candidate_id": 1,
+          "prob_gain": 0.805354654788971,
+          "prob_harm": 0.024664901196956635,
+          "step": 18
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400037
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 4,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 4,
+        "selection": {
+          "candidate_id": 2,
+          "prob_gain": 0.7957035899162292,
+          "prob_harm": 0.22994886338710785,
+          "step": 15
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400038
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400039
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 158,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 158,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 4.296704503303772e-07,
+          "prob_harm": 1.7331906576600886e-07,
+          "step": 43
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400040
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400041
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400042
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400043
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400044
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 167,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 167,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.0003487614740151912,
+          "prob_harm": 0.0004476206377148628,
+          "step": 34
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400045
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400046
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400047
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": {
+          "candidate_id": 2,
+          "prob_gain": 0.9706823825836182,
+          "prob_harm": 0.1688378006219864,
+          "step": 19
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400048
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": {
+          "candidate_id": 15,
+          "prob_gain": 0.9112545847892761,
+          "prob_harm": 0.035075511783361435,
+          "step": 19
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400049
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400050
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 162,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 162,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 9.428639486941393e-07,
+          "prob_harm": 6.284832352321246e-07,
+          "step": 39
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400051
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 28,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 28,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.00044956241617910564,
+          "prob_harm": 0.0002790451399050653,
+          "step": 13
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400052
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400053
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 90,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 90,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 9.061865966941696e-06,
+          "prob_harm": 2.9076118153170682e-06,
+          "step": 44
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400054
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 184,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 184,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.009197186678647995,
+          "prob_harm": 0.0045790644362568855,
+          "step": 17
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400055
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400056
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 183,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 183,
+        "selection": {
+          "candidate_id": 12,
+          "prob_gain": 0.9893612265586853,
+          "prob_harm": 0.0030034019146114588,
+          "step": 18
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400057
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 2.0215047413785214e-07,
+          "prob_harm": 3.045980179194885e-08,
+          "step": 19
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400058
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 177,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 177,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.1236613772780402e-07,
+          "prob_harm": 6.05913839990535e-07,
+          "step": 24
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400059
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400060
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400061
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": {
+          "candidate_id": 12,
+          "prob_gain": 0.9851803779602051,
+          "prob_harm": 0.0015050718793645501,
+          "step": 19
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400062
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400063
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400064
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400065
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 14,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 22,
+        "selection": {
+          "candidate_id": 17,
+          "prob_gain": 0.9461807012557983,
+          "prob_harm": 0.0003417480911593884,
+          "step": 60
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400066
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400067
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400068
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 155,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 80,
+        "selection": {
+          "candidate_id": 9,
+          "prob_gain": 0.9392133951187134,
+          "prob_harm": 0.002309366362169385,
+          "step": 46
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400069
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400070
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 3.875013135257177e-05,
+          "prob_harm": 1.160295960289659e-05,
+          "step": 12
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400071
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400072
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 14,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 14,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 2.2610638552578166e-06,
+          "prob_harm": 4.5785617430738057e-07,
+          "step": 69
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400073
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400074
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 24,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 23,
+        "selection": {
+          "candidate_id": 9,
+          "prob_gain": 0.8907207250595093,
+          "prob_harm": 0.00875747948884964,
+          "step": 38
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400075
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400076
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 84,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 84,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.000840904947835952,
+          "prob_harm": 0.0027884740848094225,
+          "step": 15
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400077
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400078
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 183,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 183,
+        "selection": {
+          "candidate_id": 14,
+          "prob_gain": 0.9877184629440308,
+          "prob_harm": 0.03194190561771393,
+          "step": 18
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400079
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400080
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 7,
+        "selection": {
+          "candidate_id": 2,
+          "prob_gain": 0.8997774720191956,
+          "prob_harm": 0.2200499325990677,
+          "step": 15
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400081
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400082
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400083
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400084
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400085
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 5,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 5,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 8.986451689452224e-07,
+          "prob_harm": 1.2586120874402695e-06,
+          "step": 25
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400086
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 37,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 37,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.5894491980361636e-06,
+          "prob_harm": 2.3597644940309692e-06,
+          "step": 42
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400087
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400088
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 126,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 126,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.006167793646454811,
+          "prob_harm": 0.0004758901777677238,
+          "step": 19
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400089
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400090
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400091
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400092
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400093
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400094
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 173,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 173,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.58370411895703e-07,
+          "prob_harm": 4.818950856133597e-07,
+          "step": 28
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400095
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400096
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 6,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 6,
+        "selection": {
+          "candidate_id": 17,
+          "prob_gain": 0.9635409712791443,
+          "prob_harm": 0.0004260414862073958,
+          "step": 19
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400097
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400098
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400099
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400100
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400101
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400102
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400103
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400104
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400105
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 158,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 158,
+        "selection": {
+          "candidate_id": 9,
+          "prob_gain": 0.8605383634567261,
+          "prob_harm": 0.14180225133895874,
+          "step": 43
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400106
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 179,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 179,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 7.850064065451079e-08,
+          "prob_harm": 2.4240134166575444e-07,
+          "step": 22
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400107
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400108
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400109
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 19,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 16,
+        "selection": {
+          "candidate_id": 17,
+          "prob_gain": 0.9411726593971252,
+          "prob_harm": 0.0006696874042972922,
+          "step": 91
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400110
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 95,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 95,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.4324274388854974e-06,
+          "prob_harm": 1.941223445101059e-06,
+          "step": 17
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400111
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 72,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 72,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 9.28259250940755e-05,
+          "prob_harm": 4.262888614903204e-05,
+          "step": 35
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400112
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400113
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400114
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400115
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 3,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 3,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 6.613127538912522e-07,
+          "prob_harm": 4.1325574784423225e-07,
+          "step": 19
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400116
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400117
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 11,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 11,
+        "selection": {
+          "candidate_id": 9,
+          "prob_gain": 0.9729008674621582,
+          "prob_harm": 0.00866299495100975,
+          "step": 39
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400118
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 159,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 159,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 5.214952238929982e-07,
+          "prob_harm": 2.8919376404701325e-07,
+          "step": 42
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400119
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 173,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 173,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.1380105888747494e-06,
+          "prob_harm": 7.539208581874846e-07,
+          "step": 28
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400120
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 16,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 16,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 4.1250959270655585e-07,
+          "prob_harm": 3.923025246876932e-07,
+          "step": 41
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400121
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400122
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 21,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 21,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.002406727522611618,
+          "prob_harm": 0.0002613507385831326,
+          "step": 36
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400123
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400124
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400125
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 28,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 30,
+        "selection": {
+          "candidate_id": 9,
+          "prob_gain": 0.8690812587738037,
+          "prob_harm": 0.011199348606169224,
+          "step": 59
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400126
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400127
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 143,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 143,
+        "selection": {
+          "candidate_id": 17,
+          "prob_gain": 0.977719783782959,
+          "prob_harm": 0.008843153715133667,
+          "step": 58
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400128
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400129
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 119,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 119,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.023009907454252243,
+          "prob_harm": 0.038816068321466446,
+          "step": 18
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400130
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 20,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 94,
+        "selection": {
+          "candidate_id": 9,
+          "prob_gain": 0.9195048809051514,
+          "prob_harm": 0.009474917314946651,
+          "step": 36
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400131
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 160,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 160,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.0044499504147097e-05,
+          "prob_harm": 2.0492969269980676e-05,
+          "step": 21
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400132
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 66,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 66,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.00014277601439971477,
+          "prob_harm": 6.247663259273395e-05,
+          "step": 34
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400133
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 165,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 165,
+        "selection": {
+          "candidate_id": 15,
+          "prob_gain": 0.6273530721664429,
+          "prob_harm": 0.09226664155721664,
+          "step": 36
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400134
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400135
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400136
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400137
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400138
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400139
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400140
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 16,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 19,
+        "selection": {
+          "candidate_id": 17,
+          "prob_gain": 0.864789605140686,
+          "prob_harm": 0.27463364601135254,
+          "step": 35
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400141
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400142
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 163,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 163,
+        "selection": {
+          "candidate_id": 3,
+          "prob_gain": 0.6018043160438538,
+          "prob_harm": 0.027912260964512825,
+          "step": 21
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400143
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400144
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400145
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 170,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 170,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 7.907059007550288e-09,
+          "prob_harm": 2.4863076930614625e-08,
+          "step": 31
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400146
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400147
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400148
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 156,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 156,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 3.640507202362642e-05,
+          "prob_harm": 3.1691574804426637e-06,
+          "step": 45
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400149
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400150
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400151
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400152
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 158,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 158,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 3.370517561052111e-06,
+          "prob_harm": 7.072306971167563e-07,
+          "step": 43
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400153
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 165,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 165,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 7.912295245660061e-07,
+          "prob_harm": 6.588678758134847e-08,
+          "step": 36
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400154
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400155
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 146,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 146,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 2.3098840756574646e-05,
+          "prob_harm": 8.892097866919357e-06,
+          "step": 55
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400156
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400157
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 17,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 17,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.4123452274361625e-05,
+          "prob_harm": 1.8106267816619948e-05,
+          "step": 35
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400158
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400159
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 178,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 178,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.3199590966905816e-06,
+          "prob_harm": 1.8047043113256223e-06,
+          "step": 23
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400160
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400161
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 119,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 119,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 2.5831832317635417e-06,
+          "prob_harm": 3.031984078916139e-06,
+          "step": 20
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400162
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400163
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400164
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 149,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 149,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.6182514173124218e-06,
+          "prob_harm": 8.353157681995071e-06,
+          "step": 52
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400165
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 9,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 9,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 4.4306540075922385e-05,
+          "prob_harm": 1.2847369362134486e-05,
+          "step": 32
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400166
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 78,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 180,
+        "selection": {
+          "candidate_id": 5,
+          "prob_gain": 0.9955818057060242,
+          "prob_harm": 0.008620187640190125,
+          "step": 21
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400167
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 62,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 62,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 4.136284042033367e-05,
+          "prob_harm": 4.488135891733691e-05,
+          "step": 37
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400168
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400169
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 5,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 5,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.6153712749655824e-06,
+          "prob_harm": 4.474381114505377e-07,
+          "step": 18
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400170
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400171
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400172
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 186,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 186,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 3.3315166092506843e-06,
+          "prob_harm": 2.6957675345329335e-06,
+          "step": 15
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400173
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400174
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400175
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 10,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 10,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 0.02861187420785427,
+          "prob_harm": 0.029613131657242775,
+          "step": 16
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400176
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400177
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 24,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 24,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.7146850268545677e-06,
+          "prob_harm": 1.1153340295777525e-07,
+          "step": 66
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400178
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400179
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 157,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 157,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 2.0769737147929845e-06,
+          "prob_harm": 2.824164539561025e-06,
+          "step": 22
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400180
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400181
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 42,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 42,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 7.92323553469032e-05,
+          "prob_harm": 5.712894562748261e-05,
+          "step": 46
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400182
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400183
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 8,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 9,
+        "selection": {
+          "candidate_id": 17,
+          "prob_gain": 0.9993450045585632,
+          "prob_harm": 0.0063567571341991425,
+          "step": 23
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400184
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400185
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400186
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400187
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400188
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 14,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 14,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 4.431715751707088e-06,
+          "prob_harm": 3.557141326382407e-06,
+          "step": 36
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400189
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 182,
+        "selection": {
+          "candidate_id": 2,
+          "prob_gain": 0.8178640007972717,
+          "prob_harm": 0.012616273015737534,
+          "step": 19
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400190
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 15,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 15,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 3.5252533336915803e-08,
+          "prob_harm": 3.1715421400235755e-09,
+          "step": 121
+        },
+        "strict": false,
+        "triggered": true
+      },
+      "seed": 6400191
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400192
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 161,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 161,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 1.7228629189958156e-07,
+          "prob_harm": 1.3781679797375546e-07,
+          "step": 40
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400193
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400194
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 154,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 154,
+        "selection": {
+          "candidate_id": 0,
+          "prob_gain": 3.1184477848000824e-05,
+          "prob_harm": 7.587292202515528e-05,
+          "step": 20
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400195
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": false,
+        "max_streak": 2,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": true,
+        "hold20": true,
+        "max_streak": 110,
+        "selection": {
+          "candidate_id": 17,
+          "prob_gain": 0.8330480456352234,
+          "prob_harm": 0.00014149902563076466,
+          "step": 43
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400196
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400197
+    },
+    {
+      "baseline": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": false,
+        "exit": false,
+        "hold20": false,
+        "max_streak": 0,
+        "selection": null,
+        "strict": false,
+        "triggered": false
+      },
+      "seed": 6400198
+    },
+    {
+      "baseline": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 96,
+        "selection": null,
+        "strict": true,
+        "triggered": false
+      },
+      "pilot": {
+        "benchmark": true,
+        "exit": false,
+        "hold20": true,
+        "max_streak": 96,
+        "selection": {
+          "candidate_id": 13,
+          "prob_gain": 0.7206329107284546,
+          "prob_harm": 0.004237774293869734,
+          "step": 105
+        },
+        "strict": true,
+        "triggered": true
+      },
+      "seed": 6400199
+    }
+  ],
+  "threshold": {
+    "gain": 0.6,
+    "harm": 0.3
+  },
+  "utility": "strong_gain - 2 * harm"
+}

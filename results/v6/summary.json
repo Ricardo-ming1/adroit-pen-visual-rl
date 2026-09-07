@@ -1,0 +1,26 @@
+{
+  "final_status": "STOP_V6_PROMOTION_GATE_NOT_MET",
+  "actual_closed_loop_promotion_proven": false,
+  "best_gate_compliant_v6_experiment": "D1",
+  "best_gate_compliant_checkpoint": "runs/v6/checkpoints/d1.pt",
+  "best_gate_compliant_checkpoint_sha256": "36928afd0e09367f8d9199c537907858d92627c0784dcd2bb84bbd7223288b19",
+  "highest_task_score_experiment": "E2",
+  "highest_task_score_checkpoint_sha256": "cc35a4130cb33df92fb635e58f125a219da76a2a89fd4109ba7e9267a3080b22",
+  "e2_exit_guard_limit": 0.6267741935483871,
+  "e2_exit_guard_residual": 0.0014309346567411,
+  "d2_executed": false,
+  "d2_reason": "D1 Benchmark+Strict fell 0.19 and Oracle action RMSE did not improve by 10% versus E2",
+  "direct_action_fallback_executed": false,
+  "fallback_reason": "The allowed trigger was absent: E2 offline improvements did translate into large closed-loop Benchmark and Strict gains",
+  "confirmation_executed": false,
+  "frozen_test_executed": false,
+  "student_distillation_dataset": {
+    "source_episodes": 544,
+    "source_transitions": 108800,
+    "v4_source_episodes": 244,
+    "fresh_oracle_episodes": 300,
+    "d1_student_visited_episodes": 300,
+    "d1_student_visited_transitions": 60000,
+    "d1_eligible_rows": 55340
+  }
+}

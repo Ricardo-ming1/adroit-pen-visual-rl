@@ -1,0 +1,33 @@
+{
+  "action_magnitude": 3.839961528778076,
+  "action_smoothness": 0.1101442277431488,
+  "benchmark_success": 1.0,
+  "consecutive_success_window_rate": 1.0,
+  "drop_rate": 0.0,
+  "episode_return": 11196.134857405359,
+  "episodes": [
+    {
+      "action_magnitude": 3.839961528778076,
+      "action_smoothness": 0.1101442277431488,
+      "benchmark_success": true,
+      "dropped": false,
+      "final_orientation_error": 0.0030866690946189657,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 183,
+      "return": 11196.134857405359,
+      "seed": 30001,
+      "strict_stable_success": true,
+      "strict_window_fraction": 0.9060773480662984,
+      "time_to_success": 18
+    }
+  ],
+  "final_orientation_error": 0.0030866690946189657,
+  "goal_entry_rate": 1.0,
+  "goal_exit_after_entry_rate": 0.0,
+  "non_finite_episodes": 0,
+  "strict_stable_success": 1.0,
+  "strict_window_fraction": 0.9060773480662984,
+  "time_to_success": 18.0
+}

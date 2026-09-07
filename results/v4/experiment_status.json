@@ -1,0 +1,15 @@
+{
+  "branch_pilot_status": "passed_local_improvability",
+  "dagger_round1": "not_run_round0_prerequisite_failed",
+  "dagger_round2": "not_run_round0_prerequisite_failed",
+  "failed_student_checkpoint": "results/v4/gated_student_branch_dev_failed.pt",
+  "frozen_test": "not_run_without_three_seed_promotion",
+  "paired_confirmation_200": "not_run_without_dagger_candidate",
+  "round0_closed_loop": "not_run_without_valid_branch_dev_threshold",
+  "selected_deployable_checkpoint": "runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt",
+  "student_engineering_status": "trained",
+  "student_gate_dev_status": "failed",
+  "student_status": "not_run_gate_dev_failed",
+  "three_seed": "not_run_without_confirmed_candidate",
+  "visual_last_block_rescue_status": "not_eligible_residual_regression_did_not_fit"
+}

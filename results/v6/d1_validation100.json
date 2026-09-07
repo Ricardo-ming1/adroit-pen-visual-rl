@@ -1,0 +1,1014 @@
+{
+  "benchmark_success": 0.66,
+  "consecutive_success_window_rate": 0.53,
+  "drop_rate": 0.02,
+  "episodes": [
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 17,
+      "seed": 30000,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 171,
+      "seed": 30001,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 175,
+      "seed": 30002,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 9,
+      "seed": 30003,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 171,
+      "seed": 30004,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 56,
+      "seed": 30005,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30006,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30007,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30008,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 47,
+      "seed": 30009,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 166,
+      "seed": 30010,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 44,
+      "seed": 30011,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 174,
+      "seed": 30012,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30013,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 55,
+      "seed": 30014,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 172,
+      "seed": 30015,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 177,
+      "seed": 30016,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 173,
+      "seed": 30017,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 169,
+      "seed": 30018,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 159,
+      "seed": 30019,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 7,
+      "seed": 30020,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 163,
+      "seed": 30021,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 166,
+      "seed": 30022,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30023,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 2,
+      "seed": 30024,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 178,
+      "seed": 30025,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 164,
+      "seed": 30026,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 42,
+      "seed": 30027,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 169,
+      "seed": 30028,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 168,
+      "seed": 30029,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 13,
+      "seed": 30030,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30031,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 71,
+      "seed": 30032,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30033,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 100,
+      "seed": 30034,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 169,
+      "seed": 30035,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 129,
+      "seed": 30036,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 42,
+      "seed": 30037,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 17,
+      "seed": 30038,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 2,
+      "seed": 30039,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 169,
+      "seed": 30040,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": false,
+      "dropped": true,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30041,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 30,
+      "seed": 30042,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 160,
+      "seed": 30043,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 55,
+      "seed": 30044,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": true,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30045,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30046,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30047,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30048,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 167,
+      "seed": 30049,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 179,
+      "seed": 30050,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 36,
+      "seed": 30051,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30052,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 89,
+      "seed": 30053,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 40,
+      "seed": 30054,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30055,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 10,
+      "seed": 30056,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30057,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 163,
+      "seed": 30058,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30059,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30060,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 169,
+      "seed": 30061,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30062,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 11,
+      "seed": 30063,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 45,
+      "seed": 30064,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 171,
+      "seed": 30065,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 130,
+      "seed": 30066,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30067,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30068,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 113,
+      "seed": 30069,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30070,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30071,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30072,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30073,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 42,
+      "seed": 30074,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 6,
+      "seed": 30075,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30076,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 175,
+      "seed": 30077,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 47,
+      "seed": 30078,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30079,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30080,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30081,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 20,
+      "seed": 30082,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 17,
+      "seed": 30083,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 173,
+      "seed": 30084,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 8,
+      "seed": 30085,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 17,
+      "seed": 30086,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 185,
+      "seed": 30087,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 164,
+      "seed": 30088,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 27,
+      "seed": 30089,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30090,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 28,
+      "seed": 30091,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 47,
+      "seed": 30092,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30093,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 179,
+      "seed": 30094,
+      "strict_stable_success": true
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30095,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30096,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": true,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": true,
+      "has_consecutive_success_window": true,
+      "max_consecutive_goal_steps": 26,
+      "seed": 30097,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30098,
+      "strict_stable_success": false
+    },
+    {
+      "benchmark_success": false,
+      "dropped": false,
+      "finite": true,
+      "goal_exit_after_entry": false,
+      "has_consecutive_success_window": false,
+      "max_consecutive_goal_steps": 0,
+      "seed": 30099,
+      "strict_stable_success": false
+    }
+  ],
+  "goal_entry_rate": 0.66,
+  "goal_exit_after_entry_rate": 0.5757575757575758,
+  "max_consecutive_goal_steps": 64.35,
+  "paired_losses": 29,
+  "paired_ties": 44,
+  "paired_wins": 27,
+  "strict_stable_success": 0.31
+}

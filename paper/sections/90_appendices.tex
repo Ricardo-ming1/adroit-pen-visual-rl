@@ -1,0 +1,80 @@
+\hypertarget{ux7248ux672cux6f14ux8fdbux4e0eux8bc1ux636eux8fb9ux754c}{%
+\section{版本演进与证据边界}\label{ux7248ux672cux6f14ux8fdbux4e0eux8bc1ux636eux8fb9ux754c}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+阶段
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+主要问题
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+保留下来的证据
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+不应声称的内容
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V1 & 建立 BC→AWAC→PPO 与视觉干预 & AWAC 优于 BC；RGB 内容有因果作用 & PPO 已稳定改善；时序顺序已学会 \\
+V2 & Residual SAC online handoff & hard clip、saturation、Q drift 与退化共现 & 100k residual 有收益 \\
+V3 & Safe Residual & 动作有界且很小仍退化；Q--MC bias 扩大 & 小 residual 天然安全 \\
+V4 & 同状态真实 branch & 52/240 roots 可局部改善，pending-exit 有 headroom & gate 已可部署 \\
+V5 & candidate-level gain/harm & fixed bank 有上界；privileged selector 仍不安全 & Oracle chunk 应无条件执行 \\
+V6 & 时序视觉状态蒸馏开发 & E2 78/38，但旧 exit gate 差 0.143pp & V6 当时已经晋级 \\
+V6.1 & 固定 E2 的新 bank 验证 & 300 paired、3-seed、frozen test & 回写 V6；普遍超过 Oracle \\
+\end{longtable}
+
+V6 的 \nolinkurl{STOP_V6_PROMOTION_GATE_NOT_MET} 与 V6.1 的最终成功并不冲突。前者是旧开发 bank 和旧 gate 下的历史裁决，后者是在 checkpoint 冻结后开启新 300-episode bank 的独立证据。这个顺序避免了反复查看同一 validation bank 后把偶然峰值包装成未见测试。
+
+\hypertarget{ux5b9eux73b0ux6587ux4ef6ux5bfcux8bfb}{%
+\section{实现文件导读}\label{ux5b9eux73b0ux6587ux4ef6ux5bfcux8bfb}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{src/data/} 与 \texttt{scripts/build\_visual\_dataset.py}：Minari episode 分割、MuJoCo 恢复、RGB 数据构建。
+\item
+  \texttt{src/algorithms/bc.py}、\texttt{src/algorithms/awac.py}、\texttt{src/algorithms/ppo\_anchor.py}：统一 stochastic actor 下的 V1 四阶段实现。
+\item
+  \texttt{src/algorithms/residual\_sac.py}、\nolinkurl{src/algorithms/safe_residual_sac.py}：V2/V3 受控负结果与安全动作参数化。
+\item
+  \texttt{src/counterfactual/}：V4/V5 root restore、branch completion、candidate label/ranker。
+\item
+  \nolinkurl{src/state_distillation/temporal_state_estimator.py}：CNN、GRU-128 与 primitive/auxiliary heads。
+\item
+  \nolinkurl{src/state_distillation/oracle_observation.py}：6D rotation、primitive state 与 Oracle 45D observation adapter。
+\item
+  \nolinkurl{src/state_distillation/training.py}：state、rotation、auxiliary 与 action-consistency losses。
+\item
+  \nolinkurl{src/state_distillation/evaluation.py}：部署时只读 RGB/proprio/action history 的连续 E2 policy。
+\item
+  \nolinkurl{scripts/generate_adroit_pen_report_assets.py}：只读取已提交结果，重建本文 8 张 PNG 图表。
+\end{itemize}
+
+\hypertarget{ux76f8ux5173ux5de5ux4f5cux4e0eux672fux8bedux6765ux6e90}{%
+\section{相关工作与术语来源}\label{ux76f8ux5173ux5de5ux4f5cux4e0eux672fux8bedux6765ux6e90}}
+
+\begin{itemize}
+\tightlist
+\item
+  Adroit/DAPG 任务背景：Rajeswaran et al., \href{https://arxiv.org/abs/1709.10087}{\emph{Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations}}。
+\item
+  D4RL：Fu et al., \href{https://arxiv.org/abs/2004.07219}{\emph{D4RL: Datasets for Deep Data-Driven Reinforcement Learning}}。数据集条目见 \href{https://minari.farama.org/main/datasets/D4RL/pen/human-v2/}{Minari \texttt{D4RL/pen/human-v2}}。
+\item
+  AWAC：Nair et al., \href{https://arxiv.org/abs/2006.09359}{\emph{AWAC: Accelerating Online Reinforcement Learning with Offline Datasets}}。
+\item
+  PPO：Schulman et al., \href{https://arxiv.org/abs/1707.06347}{\emph{Proximal Policy Optimization Algorithms}}。
+\item
+  SAC：Haarnoja et al., \href{https://proceedings.mlr.press/v80/haarnoja18b.html}{\emph{Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor}}。
+\item
+  6D rotation：Zhou et al., \href{https://openaccess.thecvf.com/content_CVPR_2019/html/Zhou_On_the_Continuity_of_Rotation_Representations_in_Neural_Networks_CVPR_2019_paper.html}{\emph{On the Continuity of Rotation Representations in Neural Networks}}。
+\end{itemize}
+
+本文仅引用与实现或任务直接相关的原始工作，不据此主张新算法首创或统一协议下的 SOTA。
+
+\nocite{*}

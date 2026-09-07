@@ -1,0 +1,62 @@
+project: Adroit Pen Reorientation V5 Candidate Ranker
+seed: 101
+device: cuda
+deterministic_torch: true
+data_config: configs/data.yaml
+vision_checkpoint: runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt
+oracle_checkpoint: runs/development/oracle_weighted_awac/full_seed_0/best_offline_awac_validation.pt
+v4_root_path: runs/v4/counterfactual_pilot/branch_roots.pt
+v4_label_path: runs/v4/counterfactual_pilot/branch_labels.json
+v4_pca_path: runs/v4/counterfactual_pilot/offline_action_pca.npy
+run_dir: runs/v5/candidate_ranker
+results_dir: results/v5
+
+candidates:
+  rho: 0.05
+  intervention_steps: 3
+  codebook_size: 8
+  codebook_seed: 5101
+  gamma: 0.99
+  checkpoint_root_interval: 4
+
+labels:
+  streak_significant_delta: 3
+  goal_steps_significant_delta: 3
+
+ranker:
+  hidden_size: 128
+  epochs: 160
+  batch_size: 512
+  learning_rate: 0.0003
+  weight_decay: 0.00001
+  progress_loss_coef: 0.10
+  pairwise_loss_coef: 0.25
+  thresholds:
+    gain: [0.30, 0.40, 0.50, 0.60, 0.70, 0.80, 0.90]
+    harm: [0.01, 0.02, 0.05, 0.10, 0.20, 0.30]
+  precision_min: 0.80
+  harm_rate_max: 0.05
+  coverage_min: 0.05
+
+targeted_expansion:
+  training_seed_start: 5000000
+  source_episode_start: 244
+  maximum_source_episodes: 3000
+  max_roots_per_trajectory: 2
+  minimum_remaining_steps: 30
+  zero_verify_steps: 5
+  exit_lookahead: 5
+  near_position_error: 0.12
+  near_orientation_similarity: 0.80
+  checkpoint_episode_interval: 20
+  dev_fraction: 0.20
+  split_seed: 551
+  quotas:
+    far_pre_goal_failure: 120
+    near_goal: 180
+    goal_entry_pending_exit: 600
+    stable_hold: 300
+
+validation_seeds:
+  start: 30000
+  count: 100

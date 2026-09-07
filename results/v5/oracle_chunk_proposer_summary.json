@@ -1,0 +1,9 @@
+{
+  "best_dev_positive_rmse": 0.25964561104774475,
+  "best_dev_zero_rms": 0.01225243229418993,
+  "checkpoint": "runs/v5/candidate_ranker/best_oracle_chunk_proposer.pt",
+  "dev_positive_roots": 28,
+  "dev_roots": 249,
+  "train_positive_roots": 148,
+  "train_roots": 951
+}
