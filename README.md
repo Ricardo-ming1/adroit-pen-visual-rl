@@ -4,9 +4,9 @@ A reproducible, simulation-only implementation of behavior cloning, double-Q cri
 
 ## Public repository layout
 
-The repository contains the reusable implementation (`src/`), command-line experiment entry points (`scripts/`), versioned configurations (`configs/`), CPU-oriented unit tests (`tests/`), compact result summaries (`results/`), and the Chinese technical report source (`docs/` and `paper/`). Raw Minari data, generated sequence banks, training runs, and model checkpoints are intentionally excluded. Run commands from the repository root so that relative artifact paths resolve consistently.
+The repository contains the reusable implementation (`src/`), command-line experiment entry points (`scripts/`), versioned configurations (`configs/`), CPU-oriented unit tests (`tests/`), compact result summaries (`results/`), the Chinese technical report source (`docs/` and `paper/`), and the frozen model bundle (`checkpoints/`). Raw Minari data, generated sequence banks, and training runs remain excluded. Run commands from the repository root so that relative artifact paths resolve consistently.
 
-The frozen E2 checkpoint is identified by SHA-256 in the report but is not redistributed. Set `ADROIT_E2_CHECKPOINT=/path/to/e2.pt` when running the optional artifact-integrity test.
+The three frozen checkpoints are versioned through Git LFS. After cloning, run `git lfs pull`; hashes and roles are listed in [`checkpoints/README.md`](checkpoints/README.md). The published E2 file has the same SHA-256 recorded by the confirmation report, and `configs/v6_1_confirmation.yaml` points to the complete vision/Oracle/E2 bundle.
 
 V2 additionally evaluates a frozen-AWAC Residual SAC continuation and reports its failed promotion criterion without advancing to conditional hold-reset experiments.
 
@@ -416,7 +416,7 @@ Run tests with `pytest`. Tests additionally cover exact counterfactual zero-bran
 - V5 expanded fixed-bank upper bound: [`results/v5/expanded_candidate_dataset_summary.json`](results/v5/expanded_candidate_dataset_summary.json)
 - V5 final Oracle-chunk selector: [`results/v5/oracle_chunk_augmented_privileged_summary.json`](results/v5/oracle_chunk_augmented_privileged_summary.json) (diagnostic only)
 
-Checkpoints and full per-episode run JSON are generated artifacts and are not committed to Git.
+The three frozen files documented in [`checkpoints/README.md`](checkpoints/README.md) are committed through Git LFS. All other training checkpoints and full per-episode run JSON remain generated, ignored artifacts.
 
 ## Known limitations
 

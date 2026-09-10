@@ -15,7 +15,7 @@ from src.utils import load_yaml, resolve_device, save_json
 
 
 def load_estimator(path, vision_actor, device):
-    checkpoint = torch.load(path, map_location=device, weights_only=False)
+    checkpoint = torch.load(path, map_location=device, weights_only=True)
     model = TemporalStateEstimator(vision_actor.visual_encoder).to(device)
     model.load_state_dict(checkpoint["model_state"]); model.eval()
     return model, StateTargetStats.from_dict(checkpoint["target_stats"])

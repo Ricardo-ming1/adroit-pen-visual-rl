@@ -1,8 +1,8 @@
 project: V6.1 E2 Independent Confirmation and Hold Rescue
 device: cuda:0
-vision_checkpoint: runs/frozen/vision/full_seed_101/best_offline_awac_validation.pt
-oracle_checkpoint: runs/development/oracle_weighted_awac/full_seed_0/best_offline_awac_validation.pt
-e2_checkpoint: runs/v6/checkpoints/e2.pt
+vision_checkpoint: checkpoints/vision_awac_seed101.pt
+oracle_checkpoint: checkpoints/oracle_awac_seed0.pt
+e2_checkpoint: checkpoints/e2_temporal_state_estimator.pt
 e2_checkpoint_sha256: cc35a4130cb33df92fb635e58f125a219da76a2a89fd4109ba7e9267a3080b22
 v6_summary: results/v6/summary.json
 v6_required_status: STOP_V6_PROMOTION_GATE_NOT_MET

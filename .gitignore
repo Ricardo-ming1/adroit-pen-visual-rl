@@ -25,3 +25,8 @@ results/videos/*.gif
 !results/videos/episode_000_seed_50000_failure.mp4
 !results/videos/episode_000_seed_50005_success.mp4
 !results/videos/success.gif
+
+# Versioned public model weights (stored through Git LFS).
+!checkpoints/
+!checkpoints/*.pt
+!checkpoints/README.md

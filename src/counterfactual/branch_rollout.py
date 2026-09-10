@@ -27,7 +27,7 @@ def load_frozen_actor(
     checkpoint_path: str | Path,
     device: torch.device,
 ) -> tuple[SquashedGaussianActor, NormalizationStats, dict[str, Any]]:
-    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
     actor = SquashedGaussianActor(**checkpoint["actor_init"]).to(device)
     actor.load_state_dict(checkpoint["actor_state"])
     actor.eval().requires_grad_(False)
